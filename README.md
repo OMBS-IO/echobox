@@ -65,34 +65,33 @@ Echobox uses a **tri-stack architecture** designed for professional audio qualit
 - The **Zig audio callback** runs with zero allocations and no locks — it always produces audio, never drops frames
 - **Rust** handles the complex orchestration: format decoding (via Symphonia), library management (SQLite), network protocols (SoundTouch, UPnP, Cast), and the convolution engine
 - **Flutter** provides a responsive, cross-platform UI that never touches the audio path directly
-- Communication between layers uses lock-free ring buffers and atomic operations
+- Communication between layers is designed for zero-latency, glitch-free audio
 - The entire stack is covered by **1,900+ tests** across Zig, Rust, and Flutter
 
 ---
 
 ## DSP Chain
 
-Seven processing stages running in the Zig realtime engine, plus convolution in the Rust fill thread:
+Seven processing stages running in the realtime engine, plus a dedicated convolution engine:
 
 ```
 Input → ReplayGain → Preamp → Parametric EQ → Crossfeed → Volume → Graphic EQ → Limiter → Output
                                                                               ↑
                                                                     Convolution Engine
-                                                                    (Rust fill thread)
 ```
 
 | Stage | Description |
 |-------|-------------|
 | **ReplayGain** | Track/album loudness normalization with clipping prevention |
-| **Preamp** | User gain control (-12 to +12 dB) with headroom management |
-| **Parametric EQ** | 20-band biquad filters — peak, notch, shelves, pass, bandpass, allpass |
-| **Crossfeed** | Headphone spatialization (blend + low-pass crossfeed, 3 intensity presets) |
+| **Preamp** | Adjustable gain with automatic headroom management |
+| **Parametric EQ** | Up to 20 fully configurable filter bands |
+| **Crossfeed** | Bauer-style headphone spatialization (3 intensity presets) |
 | **Volume** | User volume with precision control |
 | **Graphic EQ** | 10-band octave-spaced equalizer |
-| **Limiter** | Prevents digital clipping (~0.1ms attack, 50ms release) |
-| **Convolution** | FFT-based impulse response processing for headphone/room correction |
+| **Limiter** | Transparent digital clipping prevention |
+| **Convolution** | Impulse response processing for headphone and room correction |
 
-All DSP parameters update atomically — no clicks, no pops, no interruptions.
+Glitch-free parameter changes — no clicks, no pops, no interruptions.
 
 ---
 
@@ -101,7 +100,7 @@ All DSP parameters update atomically — no clicks, no pops, no interruptions.
 | Format | Max Sample Rate | Max Bit Depth | Gapless | Notes |
 |--------|----------------|---------------|---------|-------|
 | **FLAC** | 384 kHz | 32-bit | Yes | Lossless reference format |
-| **DSD** (DSF/DFF) | DSD256 (11.2 MHz) | 1-bit | Yes | Native DSD → PCM via Kaiser FIR |
+| **DSD** (DSF/DFF) | DSD256 (11.2 MHz) | 1-bit | Yes | High-quality DSD → PCM conversion |
 | **ALAC** | 192 kHz | 32-bit | Yes | Apple Lossless in MP4 |
 | **WAV** | 384 kHz | 32-bit | Yes | Uncompressed PCM |
 | **AIFF** | 192 kHz | 32-bit | Yes | Apple/Mac standard |
@@ -110,7 +109,7 @@ All DSP parameters update atomically — no clicks, no pops, no interruptions.
 | **AAC** | 48 kHz | — | Yes | In MP4 container |
 | **MP3** | 48 kHz | — | Yes | Universal compatibility |
 
-All formats decode to interleaved 32-bit float stereo. Mono is upmixed, multi-channel is downmixed (ITU-R BS.775).
+All formats are decoded and optimized for high-fidelity stereo output.
 
 ---
 
@@ -126,10 +125,8 @@ Echobox coordinates playback across multiple output types simultaneously:
 - **Output Groups** — Mix any combination of the above into a synchronized group
 
 **Sync engine** features:
-- Timeline-anchored coordination with drift monitoring
-- Per-device latency profiles (learned over time)
-- Automatic correction via seek nudges with anti-flapping
-- Transport mode selection: Native (SoundTouch), EB2-Coordinated (mixed network), or LinkedPlayback (Bluetooth)
+- Automatic drift detection and correction across all device types
+- Per-device latency profiles that improve over time
 
 **Internet Radio** — 40,000+ stations via Radio-Browser API with HTTP and HLS stream support.
 
@@ -139,9 +136,9 @@ Echobox coordinates playback across multiple output types simultaneously:
 
 Echobox decodes and analyzes your entire library to surface mastering quality:
 
-- **LUFS** — Integrated loudness measurement (ITU-R BS.1770, K-weighted, dual-gated)
-- **True Peak** — 4x oversampled inter-sample peak detection
-- **Dynamic Range** — Block-based DR measurement per track and album
+- **LUFS** — Industry-standard integrated loudness measurement
+- **True Peak** — Inter-sample true peak detection
+- **Dynamic Range** — Per-track and per-album DR measurement
 - **Clipping Detection** — Identifies hard clipping artifacts
 - **Spectral Bandwidth** — FFT-based frequency content analysis
 - **Hi-Res Confidence** — Detects likely upsampled files vs. genuine hi-res content
@@ -169,11 +166,11 @@ Query-backed browsing that surfaces quality insights:
 
 Built-in measurement and correction system:
 
-1. **Measure** — Generate a log sweep, capture the mic response
-2. **Analyze** — Deconvolution, frequency response smoothing, RT60 estimation, room mode detection
-3. **Correct** — Greedy iterative PEQ band fitting (up to 18 bands)
+1. **Measure** — Built-in test signal generation and mic capture
+2. **Analyze** — Automatic frequency response analysis and room characterization
+3. **Correct** — Automatic multi-band PEQ correction tailored to your room
 4. **Targets** — Flat, Harman Room, HouseCurve, or custom target curves
-5. **Optional IR** — Minimum-phase FIR for higher-resolution correction via the convolution engine
+5. **Optional IR** — Higher-resolution correction via the convolution engine
 
 ---
 
@@ -185,7 +182,7 @@ Echobox uses a modular add-on system — enable only what you need:
 |--------|-------------|
 | **Audiophile** | Parametric EQ, crossfeed, convolution, headphone profiles, audio analysis, room correction, artwork backfill |
 | **SoundTouch** | Bose speaker control, zone grouping, preset management, TuneIn integration |
-| **Audiobooks** | Chapter tracking, bookmarks, per-book speed persistence, WSOLA tempo control |
+| **Audiobooks** | Chapter tracking, bookmarks, per-book speed persistence, variable speed playback |
 | **Ideas Recorder** | Voice memos and audio recording (feeds room correction measurements) |
 
 ---

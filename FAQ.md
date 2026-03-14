@@ -28,7 +28,7 @@ FLAC (up to 384kHz/32-bit), DSD64/128/256 (DSF & DFF), ALAC, WAV, AIFF, AAC, OGG
 
 ### Does it support DSD natively?
 
-Echobox decodes DSD (DSF and DFF containers) up to DSD256 using a high-quality Kaiser FIR filter for DSD-to-PCM conversion. The full DSP chain is then available on the converted signal.
+Echobox decodes DSD (DSF and DFF containers) up to DSD256 using a high-quality digital filter for DSD-to-PCM conversion. The full DSP chain is then available on the converted signal.
 
 ### What is bit-perfect mode?
 
@@ -72,7 +72,7 @@ Echobox adds a complete DSP chain alongside bit-perfect mode, multi-room support
 
 ### vs. Neutron
 
-Echobox differentiates with its zero-allocation Zig realtime engine, multi-room coordination, audio quality analysis, room correction wizard, and library intelligence features. Both offer professional-grade DSP.
+Echobox differentiates with its purpose-built realtime audio engine, multi-room coordination, audio quality analysis, room correction wizard, and library intelligence features. Both offer professional-grade DSP.
 
 ---
 

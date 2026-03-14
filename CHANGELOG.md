@@ -25,6 +25,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 - Internet radio (40,000+ stations via Radio-Browser)
 - Android Auto integration
 - Add-on ecosystem: Audiophile, SoundTouch, Audiobooks, Ideas Recorder
+- Variable speed playback for audiobooks
+- Variable speed playback for audiobooks
 - Renderer intelligence with learned device profiles
 - Gapless playback across all formats (partial for Opus)
 - Artwork backfill (iTunes, MusicBrainz)
