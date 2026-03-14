@@ -217,6 +217,23 @@ Every decision is explained with machine-readable reason codes and human-readabl
 
 ---
 
+## How Echobox Compares
+
+| Feature | Echobox | Poweramp | UAPP | Neutron |
+|---------|:-------:|:--------:|:----:|:-------:|
+| **DSD Playback** | DSD256 | DSD128 | Native DSD | DSD128 |
+| **Parametric EQ** | 20 bands | No | Plugin | 20 bands |
+| **Room Correction** | Built-in | No | No | No |
+| **Multi-Room** | Yes | No | No | No |
+| **Audio Analysis** | Full suite | No | No | Spectrum only |
+| **Fake Hi-Res Detection** | Yes | No | No | No |
+
+See the [full feature comparison](docs/comparison.md) for a detailed breakdown, including where competitors excel.
+
+Also: [Detailed format support](docs/format-support.md) | [Why Echobox?](docs/why-echobox.md)
+
+---
+
 ## Platform & Roadmap
 
 **Current status:** Android alpha
