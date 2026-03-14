@@ -1,8 +1,6 @@
 <p align="center">
-  <img src="assets/echobox-logo.svg" alt="Echobox" width="80" />
+  <img src="assets/echobox-logo.svg" alt="Echobox" width="320" />
 </p>
-
-<h1 align="center">Echobox</h1>
 
 <p align="center">
   <em>Your music. Nothing added, nothing lost.</em>
