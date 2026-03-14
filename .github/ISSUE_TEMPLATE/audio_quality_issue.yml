@@ -1,0 +1,81 @@
+name: Audio Quality Issue
+description: Report audio artifacts, distortion, dropouts, or quality concerns
+title: "[Audio] "
+labels: ["audio-quality", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for audio-specific issues: clicks, pops, dropouts, distortion, incorrect levels, EQ anomalies, DAC problems, etc.
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue Type
+      options:
+        - Audio dropouts / gaps
+        - Clicks or pops
+        - Distortion / clipping
+        - Incorrect ReplayGain levels
+        - EQ not applying correctly
+        - Crossfeed issues
+        - Gapless playback failure
+        - USB DAC connection issue
+        - Bit-perfect verification failure
+        - DSD playback issue
+        - Sample rate switching problem
+        - Multi-room sync drift
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: file-format
+    attributes:
+      label: Audio File Format & Resolution
+      placeholder: "e.g. FLAC 24-bit/96kHz, DSD128, MP3 320kbps"
+    validations:
+      required: true
+
+  - type: input
+    id: output-device
+    attributes:
+      label: DAC / Output Device
+      placeholder: "e.g. FiiO K7, phone speaker, Chromecast Audio, SoundTouch 30"
+    validations:
+      required: true
+
+  - type: textarea
+    id: dsp-settings
+    attributes:
+      label: DSP Chain Settings
+      description: "Which DSP stages are enabled? Any custom EQ curves or convolution filters loaded?"
+
+  - type: textarea
+    id: signal-path
+    attributes:
+      label: Signal Path Diagnostics
+      description: "Open the signal path view in the app and paste the information here"
+      render: shell
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "Describe what you're hearing and when it occurs"
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Echobox Version
+      placeholder: "e.g. 0.1.0-alpha.3"
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: Phone Model & Android Version
+      placeholder: "e.g. Pixel 8 Pro, Android 15"

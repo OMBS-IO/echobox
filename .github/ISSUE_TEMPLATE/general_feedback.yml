@@ -1,0 +1,22 @@
+name: General Feedback
+description: Share feedback, questions, or suggestions
+title: "[Feedback] "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We'd love to hear from you! For quicker responses, you can also reach us on [Discord](https://discord.gg/XZ3WEFu7).
+
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Your Feedback
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Echobox Version (if applicable)
+      placeholder: "e.g. 0.1.0-alpha.3"

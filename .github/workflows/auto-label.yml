@@ -1,0 +1,57 @@
+name: Auto Label Issues
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+
+jobs:
+  auto-label:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = context.payload.issue;
+            const labels = issue.labels.map(l => l.name);
+            const title = issue.title.toLowerCase();
+            const body = (issue.body || '').toLowerCase();
+
+            const labelsToAdd = [];
+
+            // Always add Android platform (only platform currently)
+            labelsToAdd.push('platform/android');
+
+            // Detect area from content
+            const areaMap = {
+              'area/dsp': ['dsp', 'equalizer', 'eq ', 'crossfeed', 'replaygain', 'limiter', 'preamp', 'convolution'],
+              'area/usb-dac': ['usb', 'dac', 'bit-perfect', 'bit perfect'],
+              'area/multiroom': ['multi-room', 'multiroom', 'soundtouch', 'chromecast', 'upnp', 'dlna', 'group sync'],
+              'area/analysis': ['lufs', 'true peak', 'dynamic range', 'analysis', 'fake hi-res', 'clipping detection'],
+              'area/radio': ['radio', 'radio-browser', 'internet radio', 'station'],
+              'area/auto': ['android auto'],
+              'area/formats': ['flac', 'dsd', 'alac', 'aiff', 'opus', 'vorbis', 'format support'],
+              'area/library': ['library', 'metadata', 'artwork', 'scanning'],
+              'area/playback': ['gapless', 'playback', 'seek', 'buffer', 'dropout'],
+              'area/addons': ['addon', 'add-on', 'audiobook', 'recorder'],
+              'area/ui': ['ui', 'interface', 'theme', 'layout', 'navigation'],
+            };
+
+            for (const [label, keywords] of Object.entries(areaMap)) {
+              if (keywords.some(kw => title.includes(kw) || body.includes(kw))) {
+                labelsToAdd.push(label);
+              }
+            }
+
+            // Only add labels that aren't already present
+            const newLabels = labelsToAdd.filter(l => !labels.includes(l));
+
+            if (newLabels.length > 0) {
+              await github.rest.issues.addLabels({
+                ...context.repo,
+                issue_number: issue.number,
+                labels: newLabels,
+              });
+            }

@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Website
+    url: https://ombs.io
+    about: Visit the Echobox website for documentation and downloads
+  - name: Roadmap
+    url: https://ombs.io/roadmap
+    about: Check the product roadmap for planned features
+  - name: Discord
+    url: https://discord.gg/XZ3WEFu7
+    about: Chat with the community and get quick help
+  - name: Reddit
+    url: https://reddit.com/r/echobox
+    about: Join the discussion on Reddit
