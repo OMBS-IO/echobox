@@ -19,15 +19,15 @@ How does Echobox compare to other audiophile-grade Android music players? This p
 | **Crossfeed** | Bauer with ITD (3 presets) | Stereo expand | No | Yes |
 | **Convolution / IR Loading** | Built-in | No | Via plugin | No |
 | **ReplayGain** | Track + Album | Track + Album | Track + Album | Track + Album |
-| **Room Correction** | Built-in wizard + A/B + multi-point | No | No | No |
+| **Room Correction** | Built-in wizard, A/B toggle, multi-point, Flat/Harman/HouseCurve/Custom targets | No | No | No |
 | **Multi-Room Playback** | SoundTouch + Chromecast + UPnP | No | No | No |
-| **Audio Quality Analysis** | LUFS, DR, True Peak, Hi-Res Confidence | No | No | Spectrum analyzer |
+| **Audio Quality Analysis** | LUFS, DR, True Peak, Clipping, Spectral, Hi-Res Confidence | No | No | Spectrum analyzer |
 | **Release Comparison** | 6-dimension quality comparison | No | No | No |
 | **Fake Hi-Res Detection** | Yes | No | No | No |
 | **Smart Collections** | Quality-based library browsing | No | No | No |
 | **Signal Path Diagnostics** | Full chain transparency | No | No | No |
 | **Android Auto** | Yes | Yes | No | No |
-| **Gapless Playback** | All formats | All formats | Most formats | All formats |
+| **Gapless Playback** | All formats (gapless or crossfade selectable) | All formats | Most formats | All formats |
 | **Internet Radio** | 40,000+ stations | No | No | No |
 | **MQA Decoding** | No | No | Yes | No |
 | **Audiobook Support** | Chapters, bookmarks, variable speed | Basic | No | No |
@@ -36,6 +36,15 @@ How does Echobox compare to other audiophile-grade Android music players? This p
 | **AutoEQ Database** | ~3000 headphones | No | No | No |
 | **Live Spectrum** | 64-bin real-time | No | No | Spectrum only |
 | **PEQ Visual Editor** | FR chart | No | No | Yes |
+| **Lookahead Limiter** | Zero-overshoot (64-frame) | No | No | No |
+| **Bluetooth Codec Detection** | SBC, AAC, aptX, aptX HD, aptX Adaptive, LDAC | Partial | No | No |
+| **Artwork Backfill** | iTunes + MusicBrainz | No | No | No |
+| **Renderer Intelligence** | 12 device profiles + learned behavior | No | No | No |
+| **Surround Virtualization** | No | No | No | Yes |
+| **Tempo/Pitch Control** | Audiobooks only | No | No | Yes (with pitch correction) |
+| **Visualization Presets** | No | Yes (rich library) | No | No |
+| **Niche Codecs** | No | APE, WV, TTA, MPC | Similar | Similar |
+| **iOS Support** | No | No | No | Yes |
 | **Price** | TBD | ~$5 | ~$8 | ~$7 |
 
 ---
@@ -60,6 +69,14 @@ How does Echobox compare to other audiophile-grade Android music players? This p
 
 - **Signal path diagnostics** — See exactly what's happening to your audio at every stage, from source file to output device, with full transparency into DSP decisions.
 
+- **Lookahead limiter** — A predictive digital limiter that looks ahead 64 frames to prevent clipping before it happens. Zero overshoot guaranteed. No other mobile player offers this.
+
+- **AutoEQ headphone database** — Browse ~3,000 headphone correction profiles and apply in one tap. No external tools or measurement rigs needed.
+
+- **Renderer intelligence** — Echobox learns the behavior of your network audio devices over time — tracking seek reliability, startup latency, and sync stability to optimize multi-room coordination automatically.
+
+- **Bluetooth codec detection** — See exactly which Bluetooth codec is active (SBC, AAC, aptX, LDAC, etc.) so you know what quality your wireless connection delivers.
+
 ---
 
 ## Where Others Excel
@@ -67,9 +84,9 @@ How does Echobox compare to other audiophile-grade Android music players? This p
 We believe in honest comparison. Here's where competitors have advantages:
 
 ### Poweramp
-- **Mature ecosystem** — Years of development, extensive device testing, and a large user community. Poweramp is battle-tested on thousands of Android device configurations.
-- **Visualization** — Poweramp offers rich audio visualizations that Echobox does not currently have.
-- **Broad codec support** — Supports some niche formats (APE, WV, TTA, MPC) that Echobox does not.
+- **Mature ecosystem** — Over a decade of development, extensive device testing, and the largest user community of any Android audiophile player. Battle-tested on thousands of device configurations.
+- **Visualization library** — Poweramp offers a rich collection of audio visualizations and customizable skins. Echobox has a live spectrum analyzer but no decorative visualizations.
+- **Broad codec support** — Supports niche formats (APE, WV, TTA, MPC) that Echobox does not.
 
 ### USB Audio Player Pro (UAPP)
 - **Native DSD output** — UAPP can send raw DSD bitstreams directly to compatible USB DACs without PCM conversion. Echobox converts DSD to high-quality PCM.
@@ -77,9 +94,10 @@ We believe in honest comparison. Here's where competitors have advantages:
 - **768kHz output** — UAPP supports higher output sample rates than Echobox for compatible DACs.
 
 ### Neutron
-- **Deep DSP** — Neutron offers additional DSP capabilities like compression, surround virtualization, and tempo adjustment with pitch correction.
-- **Cross-platform** — Available on both Android and iOS.
-- **Mature audio engine** — Years of optimization across a wide range of devices.
+- **Surround virtualization** — Neutron can simulate surround sound from stereo sources. Echobox focuses on stereo fidelity.
+- **Tempo/pitch control** — Neutron offers independent tempo and pitch adjustment for music playback. Echobox offers variable speed for audiobooks only.
+- **Cross-platform** — Available on both Android and iOS. Echobox is currently Android only.
+- **Mature audio engine** — Years of optimization across a wide range of devices, with a deep DSP toolkit including compression and additional processing stages.
 
 ---
 

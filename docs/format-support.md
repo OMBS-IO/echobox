@@ -14,7 +14,7 @@ Echobox supports a wide range of audio formats, from lossless hi-res to standard
 | **WAV** | `.wav` | Uncompressed | 384 kHz | 32-bit | Yes | Minimal | Any bit depth supported |
 | **AIFF** | `.aiff`, `.aif` | Uncompressed | 192 kHz | 32-bit | Yes | Partial | Apple/Mac standard |
 | **OGG Vorbis** | `.ogg` | Lossy | 48 kHz | — | Yes | Vorbis comments | Open format |
-| **Opus** | `.opus` | Lossy | 48 kHz | — | Partial | Vorbis comments | Efficient modern codec |
+| **Opus** | `.opus` | Lossy | 48 kHz | — | Yes | Vorbis comments + R128 gain | Efficient modern codec |
 | **AAC** | `.m4a`, `.mp4` | Lossy | 48 kHz | — | Yes | MP4 atoms | In MP4 container |
 | **MP3** | `.mp3` | Lossy | 48 kHz | — | Yes | ID3v2/v1 + ReplayGain | Universal compatibility |
 
@@ -96,7 +96,7 @@ Echobox supports ReplayGain for automatic loudness normalization:
 
 - **Track mode** — Normalizes each track independently
 - **Album mode** — Preserves relative loudness within an album
-- Reads ReplayGain tags from FLAC (Vorbis comments), MP3 (ID3v2), and other supported formats
+- Reads ReplayGain tags from FLAC (Vorbis comments), MP3 (ID3v2), Opus (R128 + standard), and other supported formats
 - Includes clipping prevention to avoid distortion on loud tracks
 
 ---
@@ -108,7 +108,8 @@ Echobox supports ReplayGain for automatic loudness normalization:
 | FLAC | Vorbis comments | PICTURE block | Yes |
 | MP3 | ID3v2 / ID3v1 | ID3v2 APIC | Yes |
 | AAC/ALAC | MP4 atoms | covr atom | No |
-| OGG Vorbis | Vorbis comments | PICTURE | No |
+| OGG Vorbis | Vorbis comments | PICTURE | Yes |
+| Opus | Vorbis comments | PICTURE | Yes (RG + R128) |
 | WAV | Minimal | No | No |
 | AIFF | Partial | No | No |
 | DSD (DSF) | DSF tags | Yes | No |

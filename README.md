@@ -108,7 +108,7 @@ Glitch-free parameter changes — no clicks, no pops, no interruptions.
 | **WAV** | 384 kHz | 32-bit | Yes | Uncompressed PCM |
 | **AIFF** | 192 kHz | 32-bit | Yes | Apple/Mac standard |
 | **OGG Vorbis** | 48 kHz | — | Yes | Open lossy format |
-| **Opus** | 48 kHz | — | Partial | Modern efficient codec |
+| **Opus** | 48 kHz | — | Yes | Modern efficient codec |
 | **AAC** | 48 kHz | — | Yes | In MP4 container |
 | **MP3** | 48 kHz | — | Yes | Universal compatibility |
 

@@ -27,7 +27,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 - Add-on ecosystem: Audiophile, SoundTouch, Audiobooks, Ideas Recorder
 - Variable speed playback for audiobooks
 - Renderer intelligence with learned device profiles
-- Gapless playback across all formats (partial for Opus)
+- Gapless playback across all formats
 - Artwork backfill (iTunes, MusicBrainz)
 - TPDF output dithering (16/20/24-bit target)
 - Perceptual volume curve (cubic)
