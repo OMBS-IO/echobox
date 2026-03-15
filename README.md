@@ -10,14 +10,14 @@
   <a href="https://ombs.io"><img src="https://img.shields.io/badge/Platform-Android-3ddc84?logo=android&logoColor=white" alt="Platform: Android" /></a>
   <a href="https://ombs.io"><img src="https://img.shields.io/badge/Audio-Up_to_384kHz_/_DSD256-4F6EF7" alt="Audio: Up to 384kHz / DSD256" /></a>
   <a href="#architecture"><img src="https://img.shields.io/badge/Architecture-Flutter_+_Rust_+_Zig-orange" alt="Architecture: Flutter + Rust + Zig" /></a>
-  <a href="#architecture"><img src="https://img.shields.io/badge/Tests-1,900+-brightgreen" alt="Tests: 1,700+" /></a>
+  <a href="https://ombs.io"><img src="https://img.shields.io/badge/Status-Alpha-yellow" alt="Status: Alpha" /></a>
   <a href="https://ombs.io"><img src="https://img.shields.io/badge/Website-ombs.io-blue" alt="Website" /></a>
   <a href="https://discord.gg/XZ3WEFu7"><img src="https://img.shields.io/badge/Discord-Join-5865F2?logo=discord&logoColor=white" alt="Discord" /></a>
 </p>
 
 ---
 
-**Echobox** is an audiophile-grade Android music player built on a tri-stack architecture: **Flutter** for the UI, **Rust** for the core engine, and **Zig** for the realtime audio path. It delivers bit-perfect playback through USB DACs, supports hi-res formats up to 384kHz FLAC and DSD256, and features a professional 7-stage DSP chain. With multi-room coordination, audio quality analysis, room correction, and library intelligence, Echobox brings studio-grade listening to your pocket.
+**Echobox** is an audiophile-grade Android music player built on a tri-stack architecture: **Flutter** for the UI, **Rust** for the core engine, and **Zig** for the realtime audio path. It delivers bit-perfect playback through USB DACs, supports hi-res formats up to 384kHz FLAC and DSD256, and features a professional 9-stage DSP chain. With multi-room coordination, audio quality analysis, room correction, and library intelligence, Echobox brings studio-grade listening to your pocket.
 
 > **Status:** Echobox is currently in **alpha**. [Sign up for early access](https://ombs.io) to be notified when the beta launches.
 
@@ -27,7 +27,7 @@
 
 - **Bit-Perfect Playback** — Direct USB DAC output with zero processing when you want pure signal
 - **Hi-Res Audio** — Native support for 384kHz/32-bit FLAC, DSD64/128/256 (DSF & DFF)
-- **7-Stage DSP Chain** — ReplayGain, parametric EQ, crossfeed, graphic EQ, limiter, and more
+- **9-Stage DSP Chain** — ReplayGain, parametric EQ, crossfeed, graphic EQ, limiter, dither, and more
 - **Convolution Engine** — Load impulse responses for headphone correction or room correction
 - **Multi-Room Sync** — Coordinate playback across SoundTouch, Chromecast, and UPnP/DLNA devices
 - **Audio Quality Analysis** — LUFS metering, true peak detection, dynamic range, fake hi-res detection
@@ -35,7 +35,11 @@
 - **Room Correction** — Built-in measurement wizard with automatic PEQ correction
 - **Signal Path Diagnostics** — Real-time inspection of every stage from source to output
 - **Zero Cloud Dependency** — No telemetry, no analytics, no account required
-- **Gapless Playback** — Seamless transitions across all supported formats
+- **Gapless / Crossfade Toggle** — Choose between sample-accurate gapless or smooth crossfade transitions
+- **Output Dithering** — Professional TPDF dither for bit-depth conversion
+- **Live Spectrum Analyzer** — Real-time 64-bin FFT visualization of your audio output
+- **AutoEQ Database** — Browse ~3000 headphone EQ presets and apply in one tap
+- **PEQ Visual Editor** — Interactive frequency response chart for parametric EQ
 - **Internet Radio** — 40,000+ stations via Radio-Browser API
 
 ---
@@ -64,16 +68,16 @@ Echobox uses a **tri-stack architecture** designed for professional audio qualit
 - **Rust** handles the complex orchestration: format decoding (via Symphonia), library management (SQLite), network protocols (SoundTouch, UPnP, Cast), and the convolution engine
 - **Flutter** provides a responsive, cross-platform UI that never touches the audio path directly
 - Communication between layers is designed for zero-latency, glitch-free audio
-- The entire stack is covered by **1,900+ tests** across Zig, Rust, and Flutter
+- The entire stack is rigorously tested across all three layers
 
 ---
 
 ## DSP Chain
 
-Seven processing stages running in the realtime engine, plus a dedicated convolution engine:
+Nine processing stages running in the realtime engine, plus a dedicated convolution engine:
 
 ```
-Input → ReplayGain → Preamp → Parametric EQ → Crossfeed → Volume → Graphic EQ → Limiter → Output
+Input → ReplayGain → Preamp → Parametric EQ → Crossfeed → Volume → Graphic EQ → Limiter → Dither → Output
                                                                               ↑
                                                                     Convolution Engine
 ```
@@ -83,10 +87,11 @@ Input → ReplayGain → Preamp → Parametric EQ → Crossfeed → Volume → G
 | **ReplayGain** | Track/album loudness normalization with clipping prevention |
 | **Preamp** | Adjustable gain with automatic headroom management |
 | **Parametric EQ** | Up to 20 fully configurable filter bands |
-| **Crossfeed** | Bauer-style headphone spatialization (3 intensity presets) |
-| **Volume** | User volume with precision control |
+| **Crossfeed** | Bauer-style headphone crossfeed with inter-aural time delay and head-shadow filtering (3 presets) |
+| **Volume** | User volume with optional perceptual curve for natural loudness feel |
 | **Graphic EQ** | 10-band octave-spaced equalizer |
-| **Limiter** | Transparent digital clipping prevention |
+| **Limiter** | Lookahead limiter with zero-overshoot guarantee (64-frame predictive detection) |
+| **Dither** | TPDF output dithering for 16/20/24-bit output devices |
 | **Convolution** | Impulse response processing for headphone and room correction |
 
 Glitch-free parameter changes — no clicks, no pops, no interruptions.
@@ -164,11 +169,12 @@ Query-backed browsing that surfaces quality insights:
 
 Built-in measurement and correction system:
 
-1. **Measure** — Built-in test signal generation and mic capture
-2. **Analyze** — Automatic frequency response analysis and room characterization
-3. **Correct** — Automatic multi-band PEQ correction tailored to your room
-4. **Targets** — Flat, Harman Room, HouseCurve, or custom target curves
-5. **Optional IR** — Higher-resolution correction via the convolution engine
+1. **Measure** — Built-in test signal generation and mic capture (1, 3, or 5 positions)
+2. **Analyze** — Frequency response visualization with room mode detection
+3. **Correct** — Automatic multi-band PEQ correction with before/after chart
+4. **Compare** — A/B toggle for instant corrected vs uncorrected comparison during playback
+5. **Targets** — Flat, Harman Room, HouseCurve, or custom target curves
+6. **Optional IR** — Higher-resolution correction via the convolution engine
 
 ---
 
@@ -178,7 +184,7 @@ Echobox uses a modular add-on system — enable only what you need:
 
 | Add-on | Capabilities |
 |--------|-------------|
-| **Audiophile** | Parametric EQ, crossfeed, convolution, headphone profiles, audio analysis, room correction, artwork backfill |
+| **Audiophile** | Parametric EQ with visual editor, crossfeed, convolution, headphone profiles, AutoEQ database (~3000 models), audio analysis, room correction with A/B comparison and multi-point measurement, output dithering, perceptual volume curve, live spectrum analyzer, artwork backfill |
 | **SoundTouch** | Bose speaker control, zone grouping, preset management, TuneIn integration |
 | **Audiobooks** | Chapter tracking, bookmarks, per-book speed persistence, variable speed playback |
 | **Ideas Recorder** | Voice memos and audio recording (feeds room correction measurements) |
@@ -197,6 +203,7 @@ Real-time transparency into exactly what Echobox is doing to your audio:
 - Bit-perfect status with disqualification reasons
 - Group sync health (per-member drift, corrections applied)
 - Renderer capability profiles (advertised + learned)
+- Live spectrum analyzer (64-bin real-time FFT)
 
 ---
 

@@ -11,7 +11,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 ### Current Alpha Features
 - Tri-stack audio engine (Flutter + Rust + Zig)
 - Full format support: FLAC (384kHz/32-bit), DSD64/128/256, ALAC, WAV, AIFF, AAC, OGG Vorbis, Opus, MP3
-- 7-stage DSP chain: ReplayGain, Preamp, Parametric EQ (20 bands), Crossfeed, Volume, Graphic EQ (10 bands), Limiter
+- 9-stage DSP chain: ReplayGain, Preamp, Parametric EQ (20 bands, visual editor), Crossfeed (Bauer with ITD), Volume (perceptual curve option), Graphic EQ (10 bands), Limiter (lookahead), Dither (TPDF)
 - Convolution engine for headphone and room correction
 - Bit-perfect USB DAC playback with native sample rate negotiation
 - Multi-room coordination: SoundTouch zones, Chromecast, UPnP/DLNA
@@ -26,10 +26,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 - Android Auto integration
 - Add-on ecosystem: Audiophile, SoundTouch, Audiobooks, Ideas Recorder
 - Variable speed playback for audiobooks
-- Variable speed playback for audiobooks
 - Renderer intelligence with learned device profiles
 - Gapless playback across all formats (partial for Opus)
 - Artwork backfill (iTunes, MusicBrainz)
+- TPDF output dithering (16/20/24-bit target)
+- Perceptual volume curve (cubic)
+- Lookahead limiter with zero-overshoot guarantee
+- True Bauer crossfeed with inter-aural time delay and head-shadow filtering
+- Live spectrum analyzer (64-bin real-time FFT)
+- AutoEQ headphone database (~3000 models, one-click import)
+- PEQ visual editor with frequency response chart
+- Room correction A/B comparison toggle
+- Multi-point room measurement (1/3/5 positions with power-domain averaging)
+- DR14-compatible per-channel dynamic range measurement
+- Bit-perfect convolution bypass and exclusive mode sample rate lock
+- Gapless/Crossfade selectable track transitions
 - Zero telemetry, zero cloud dependency
 
 ---

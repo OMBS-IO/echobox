@@ -16,10 +16,10 @@ How does Echobox compare to other audiophile-grade Android music players? This p
 | **Bit-Perfect USB DAC** | Yes | Yes | Yes (primary focus) | Yes |
 | **Parametric EQ** | 20 bands | No | Via plugin | 20 bands |
 | **Graphic EQ** | 10 bands | 10 bands | No | No |
-| **Crossfeed** | Bauer (3 presets) | Stereo expand | No | Yes |
+| **Crossfeed** | Bauer with ITD (3 presets) | Stereo expand | No | Yes |
 | **Convolution / IR Loading** | Built-in | No | Via plugin | No |
 | **ReplayGain** | Track + Album | Track + Album | Track + Album | Track + Album |
-| **Room Correction** | Built-in measurement wizard | No | No | No |
+| **Room Correction** | Built-in wizard + A/B + multi-point | No | No | No |
 | **Multi-Room Playback** | SoundTouch + Chromecast + UPnP | No | No | No |
 | **Audio Quality Analysis** | LUFS, DR, True Peak, Hi-Res Confidence | No | No | Spectrum analyzer |
 | **Release Comparison** | 6-dimension quality comparison | No | No | No |
@@ -31,6 +31,11 @@ How does Echobox compare to other audiophile-grade Android music players? This p
 | **Internet Radio** | 40,000+ stations | No | No | No |
 | **MQA Decoding** | No | No | Yes | No |
 | **Audiobook Support** | Chapters, bookmarks, variable speed | Basic | No | No |
+| **Output Dithering** | TPDF (16/20/24-bit) | No | No | No |
+| **Perceptual Volume** | Cubic curve | No | No | No |
+| **AutoEQ Database** | ~3000 headphones | No | No | No |
+| **Live Spectrum** | 64-bin real-time | No | No | Spectrum only |
+| **PEQ Visual Editor** | FR chart | No | No | Yes |
 | **Price** | TBD | ~$5 | ~$8 | ~$7 |
 
 ---
@@ -40,6 +45,10 @@ How does Echobox compare to other audiophile-grade Android music players? This p
 ### Features no other Android player offers
 
 - **Built-in room correction** — Measure your room with a test signal, and Echobox automatically generates a correction profile. No external tools or plugins required.
+
+- **Output dithering** — Professional TPDF dither converts quantization noise into inaudible white noise when outputting to 16-bit devices. Standard practice in mastering studios; unique among mobile players.
+
+- **Live spectrum analyzer** — Real-time 64-bin FFT visualization lets you see what's actually playing through the DSP chain.
 
 - **Audio quality analysis** — Full-library analysis measuring loudness (LUFS), dynamic range, true peak, clipping, and hi-res confidence. No other mobile player does this.
 
