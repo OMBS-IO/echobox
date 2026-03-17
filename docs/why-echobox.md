@@ -21,7 +21,7 @@ Neither camp gives audiophiles and serious music listeners everything they need 
 
 Echobox isn't built on top of Android's media framework or a generic C++ audio library. It uses a dedicated architecture with **Rust** for the core engine and **Zig** for the realtime audio path — designed from day one for professional-grade audio processing with zero compromises.
 
-The result: a 7-stage DSP chain that runs with zero allocations in the audio callback, ensuring glitch-free playback even under heavy processing load.
+The result: a 9-stage DSP chain that runs with zero allocations in the audio callback, ensuring glitch-free playback even under heavy processing load.
 
 ### Know your library
 

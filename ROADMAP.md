@@ -14,7 +14,7 @@ Echobox is in **alpha** on Android.
 
 - Tri-stack audio engine (Flutter + Rust + Zig)
 - Full format support (FLAC, DSD, ALAC, WAV, AIFF, AAC, OGG, Opus, MP3)
-- 7-stage DSP chain with parametric EQ, crossfeed, convolution, and limiter
+- 9-stage DSP chain with parametric EQ, crossfeed, convolution, limiter, dither, and more
 - Bit-perfect USB DAC playback
 - Multi-room coordination (SoundTouch, Chromecast, UPnP/DLNA)
 - Audio quality analysis (LUFS, true peak, dynamic range, fake hi-res detection)

@@ -10,7 +10,7 @@ REPO="OMBS-IO/echobox"
 
 echo "==> Setting repo description and homepage..."
 gh repo edit "$REPO" \
-  --description "Audiophile-grade Android music player — bit-perfect USB DAC, hi-res audio (384kHz FLAC, DSD256), 7-stage DSP chain, multi-room sync, audio quality analysis. Flutter + Rust + Zig." \
+  --description "Audiophile-grade Android music player — bit-perfect USB DAC, hi-res audio (384kHz FLAC, DSD256), 9-stage DSP chain, multi-room sync, audio quality analysis. Flutter + Rust + Zig." \
   --homepage "https://ombs.io"
 
 echo "==> Setting repo topics..."
