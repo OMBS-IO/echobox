@@ -41,6 +41,12 @@
 - **AutoEQ Database** — Browse ~3000 headphone EQ presets and apply in one tap
 - **PEQ Visual Editor** — Interactive frequency response chart for parametric EQ
 - **Internet Radio** — 40,000+ stations via Radio-Browser API
+- **Synced Lyrics** — Embedded, sidecar .lrc, and online lyrics with auto-scroll
+- **Smart Playlists** — Rule-based dynamic playlists with 17 filter fields and M3U/PLS import
+- **Subsonic/Navidrome** — Stream from self-hosted music servers with offline cache
+- **Scrobbling** — Track listening history via Last.fm and ListenBrainz
+- **Playback Profiles** — Named DSP profiles (Auto, Bit-Perfect, Audiophile, Immersive, Compatibility) with route-class auto-switching
+- **HRTF Spatialization** — Binaural rendering with early reflections and venue simulation presets
 
 ---
 
@@ -111,6 +117,8 @@ Glitch-free parameter changes — no clicks, no pops, no interruptions.
 | **Opus** | 48 kHz | — | Yes | Modern efficient codec |
 | **AAC** | 48 kHz | — | Yes | In MP4 container |
 | **MP3** | 48 kHz | — | Yes | Universal compatibility |
+| **WavPack** | — | Lossless | Yes | WavPack lossless via libwavpack |
+| **APE** | — | Lossless | Yes | Monkey's Audio (all compression levels) |
 
 All formats are decoded and optimized for high-fidelity stereo output.
 
@@ -184,10 +192,15 @@ Echobox uses a modular add-on system — enable only what you need:
 
 | Add-on | Capabilities |
 |--------|-------------|
-| **Audiophile** | Parametric EQ with visual editor, crossfeed, convolution, headphone profiles, AutoEQ database (~3000 models), audio analysis, room correction with A/B comparison and multi-point measurement, output dithering, perceptual volume curve, live spectrum analyzer, artwork backfill |
+| **Audiophile** | Parametric EQ with visual editor, crossfeed, convolution, headphone profiles, AutoEQ database (~3000 models), audio analysis, room correction with A/B comparison and multi-point measurement, output dithering, perceptual volume curve, live spectrum analyzer, HRTF spatialization, artwork backfill |
 | **SoundTouch** | Bose speaker control, zone grouping, preset management, TuneIn integration |
 | **Audiobooks** | Chapter tracking, bookmarks, per-book speed persistence, variable speed playback |
 | **Ideas Recorder** | Voice memos and audio recording (feeds room correction measurements) |
+| **Lyrics** | Synced lyrics display from embedded tags, sidecar .lrc files, and LRCLib online |
+| **Smart Playlists** | Rule-based dynamic playlists (17 fields, 11 operators) with M3U/PLS import |
+| **Subsonic** | Browse, stream, and cache music from Subsonic/Navidrome servers |
+| **Scrobbling** | Last.fm and ListenBrainz listening history with offline queue |
+| **Library Analytics** | Collection-wide quality metrics, format distributions, metadata health, duplicate detection |
 
 ---
 
@@ -232,6 +245,10 @@ Every decision is explained with machine-readable reason codes and human-readabl
 | **Multi-Room** | Yes | No | No | No |
 | **Audio Analysis** | Full suite | No | No | Spectrum only |
 | **Fake Hi-Res Detection** | Yes | No | No | No |
+| **Synced Lyrics** | Yes | Plugin | No | No |
+| **Subsonic/Navidrome** | Yes | No | No | No |
+| **Scrobbling** | Last.fm + LB | No | No | No |
+| **HRTF Spatialization** | Yes | No | No | No |
 
 See the [full feature comparison](docs/comparison.md) for a detailed breakdown, including where competitors excel.
 
@@ -286,7 +303,7 @@ No. Echobox is proprietary software developed by One Man Band Studios. This GitH
 <details>
 <summary><strong>What audio formats are supported?</strong></summary>
 
-FLAC (up to 384kHz/32-bit), DSD64/128/256 (DSF & DFF), ALAC, WAV, AIFF, AAC, OGG Vorbis, Opus, and MP3. All formats are decoded to 32-bit float with automatic sample rate conversion when needed.
+FLAC (up to 384kHz/32-bit), DSD64/128/256 (DSF & DFF), ALAC, WAV, AIFF, AAC, OGG Vorbis, Opus, MP3, WavPack, and APE (Monkey's Audio). All formats are decoded to 32-bit float with automatic sample rate conversion when needed.
 </details>
 
 <details>

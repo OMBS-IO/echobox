@@ -17,6 +17,8 @@ Echobox supports a wide range of audio formats, from lossless hi-res to standard
 | **Opus** | `.opus` | Lossy | 48 kHz | — | Yes | Vorbis comments + R128 gain | Efficient modern codec |
 | **AAC** | `.m4a`, `.mp4` | Lossy | 48 kHz | — | Yes | MP4 atoms | In MP4 container |
 | **MP3** | `.mp3` | Lossy | 48 kHz | — | Yes | ID3v2/v1 + ReplayGain | Universal compatibility |
+| **WavPack** | `.wv` | Lossless | 384 kHz | 32-bit | Yes | APEv2 + ReplayGain | WavPack lossless via libwavpack |
+| **APE** | `.ape` | Lossless | — | 32-bit | Yes | APEv2 + ID3v2 | Monkey's Audio, all compression levels |
 
 ---
 
@@ -114,6 +116,8 @@ Echobox supports ReplayGain for automatic loudness normalization:
 | AIFF | Partial | No | No |
 | DSD (DSF) | DSF tags | Yes | No |
 | DSD (DFF) | DFF tags | No | No |
+| WavPack | APEv2 | Binary tag | Yes |
+| APE | APEv2 + ID3v2 | Binary tag | Yes |
 
 Echobox can also backfill missing artwork from iTunes and MusicBrainz.
 

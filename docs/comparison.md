@@ -43,8 +43,14 @@ How does Echobox compare to other audiophile-grade Android music players? This p
 | **Surround Virtualization** | No | No | No | Yes |
 | **Tempo/Pitch Control** | Audiobooks only | No | No | Yes (with pitch correction) |
 | **Visualization Presets** | No | Yes (rich library) | No | No |
-| **Niche Codecs** | No | APE, WV, TTA, MPC | Similar | Similar |
+| **Niche Codecs** | APE, WV | TTA, MPC | Similar | Similar |
 | **iOS Support** | No | No | No | Yes |
+| **Synced Lyrics** | Yes (embedded + online) | Plugin | No | No |
+| **Smart Playlists** | Rule-based (17 fields) | Basic | No | No |
+| **Subsonic/Navidrome** | Yes (with offline cache) | No | No | No |
+| **Scrobbling** | Last.fm + ListenBrainz | No | No | No |
+| **Playback Profiles** | 5 profiles + auto-switch | No | No | No |
+| **HRTF Spatialization** | Binaural + venue sim | No | No | No |
 | **Price** | TBD | ~$5 | ~$8 | ~$7 |
 
 ---
@@ -77,6 +83,18 @@ How does Echobox compare to other audiophile-grade Android music players? This p
 
 - **Bluetooth codec detection** — See exactly which Bluetooth codec is active (SBC, AAC, aptX, LDAC, etc.) so you know what quality your wireless connection delivers.
 
+- **Synced lyrics** — Display embedded, sidecar .lrc, or online lyrics with auto-scroll during playback. No other Android audiophile player offers built-in synced lyrics with online lookup.
+
+- **Smart playlists** — Create rule-based dynamic playlists using 17 filter fields and 11 operators, or import existing M3U/PLS playlists. Rules can reference audio analysis data (dynamic range, loudness, hi-res confidence).
+
+- **Subsonic/Navidrome streaming** — Browse and stream your self-hosted music library with offline caching. No other audiophile player integrates with Subsonic-compatible servers.
+
+- **Scrobbling** — Track your listening history via Last.fm and ListenBrainz with a resilient offline queue that syncs when connectivity returns.
+
+- **Playback profiles** — Five named DSP profiles (Auto, Bit-Perfect, Audiophile, Immersive, Compatibility) that auto-switch based on your output device. Plug in your DAC and your preferred profile activates automatically.
+
+- **HRTF spatialization** — Binaural rendering with early reflections and four venue simulation presets (Studio, Concert Hall, Club, Open Air) for immersive headphone listening.
+
 ---
 
 ## Where Others Excel
@@ -86,7 +104,7 @@ We believe in honest comparison. Here's where competitors have advantages:
 ### Poweramp
 - **Mature ecosystem** — Over a decade of development, extensive device testing, and the largest user community of any Android audiophile player. Battle-tested on thousands of device configurations.
 - **Visualization library** — Poweramp offers a rich collection of audio visualizations and customizable skins. Echobox has a live spectrum analyzer but no decorative visualizations.
-- **Broad codec support** — Supports niche formats (APE, WV, TTA, MPC) that Echobox does not.
+- **Broad codec support** — Supports niche formats (TTA, MPC) that Echobox does not. Both players support APE and WavPack.
 
 ### USB Audio Player Pro (UAPP)
 - **Native DSD output** — UAPP can send raw DSD bitstreams directly to compatible USB DACs without PCM conversion. Echobox converts DSD to high-quality PCM.

@@ -24,7 +24,7 @@ No. Zero telemetry, zero analytics, no cloud dependency, no account required. Yo
 
 ### What audio formats are supported?
 
-FLAC (up to 384kHz/32-bit), DSD64/128/256 (DSF & DFF), ALAC, WAV, AIFF, AAC, OGG Vorbis, Opus, and MP3. All formats are decoded to 32-bit float with automatic sample rate conversion when needed.
+FLAC (up to 384kHz/32-bit), DSD64/128/256 (DSF & DFF), ALAC, WAV, AIFF, AAC, OGG Vorbis, Opus, MP3, WavPack, and APE (Monkey's Audio). All formats are decoded to 32-bit float with automatic sample rate conversion when needed.
 
 ### Does it support DSD natively?
 

@@ -10,7 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Current Alpha Features
 - Tri-stack audio engine (Flutter + Rust + Zig)
-- Full format support: FLAC (384kHz/32-bit), DSD64/128/256, ALAC, WAV, AIFF, AAC, OGG Vorbis, Opus, MP3
+- Full format support: FLAC (384kHz/32-bit), DSD64/128/256, ALAC, WAV, AIFF, AAC, OGG Vorbis, Opus, MP3, WavPack, APE
 - 9-stage DSP chain: ReplayGain, Preamp, Parametric EQ (20 bands, visual editor), Crossfeed (Bauer with ITD), Volume (perceptual curve option), Graphic EQ (10 bands), Limiter (lookahead), Dither (TPDF)
 - Convolution engine for headphone and room correction
 - Bit-perfect USB DAC playback with native sample rate negotiation
@@ -24,7 +24,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 - Adaptive route policy engine
 - Internet radio (40,000+ stations via Radio-Browser)
 - Android Auto integration
-- Add-on ecosystem: Audiophile, SoundTouch, Audiobooks, Ideas Recorder
+- Add-on ecosystem: Audiophile, SoundTouch, Audiobooks, Ideas Recorder, Lyrics, Smart Playlists, Subsonic, Scrobbling, Library Analytics
 - Variable speed playback for audiobooks
 - Renderer intelligence with learned device profiles
 - Gapless playback across all formats
@@ -41,6 +41,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 - DR14-compatible per-channel dynamic range measurement
 - Bit-perfect convolution bypass and exclusive mode sample rate lock
 - Gapless/Crossfade selectable track transitions
+- Synced lyrics display (embedded tags, sidecar .lrc, LRCLib online API)
+- Smart playlists with rule engine (17 filter fields, 11 operators, 6 presets) and M3U/PLS import
+- Subsonic/Navidrome streaming client with offline cache and download
+- Scrobbling to Last.fm and ListenBrainz with offline queue
+- Playback profiles (Auto, Bit-Perfect, Audiophile, Immersive, Compatibility) with route-class auto-switching
+- HRTF binaural spatialization with early reflections and venue simulation (4 presets)
+- DSP category architecture (Technical/Experiential/AlwaysActive with independent bypass)
+- Intent-aware playback engine with per-device profile binding
+- Library analytics: collection-wide quality metrics, format distributions, metadata health, duplicate detection
 - Zero telemetry, zero cloud dependency
 
 ---

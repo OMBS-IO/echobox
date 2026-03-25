@@ -13,7 +13,7 @@ Echobox is in **alpha** on Android.
 ## What's Built
 
 - Tri-stack audio engine (Flutter + Rust + Zig)
-- Full format support (FLAC, DSD, ALAC, WAV, AIFF, AAC, OGG, Opus, MP3)
+- Full format support (FLAC, DSD, ALAC, WAV, AIFF, AAC, OGG, Opus, MP3, WavPack, APE)
 - 9-stage DSP chain with parametric EQ, crossfeed, convolution, limiter, dither, and more
 - Bit-perfect USB DAC playback
 - Multi-room coordination (SoundTouch, Chromecast, UPnP/DLNA)
@@ -21,9 +21,15 @@ Echobox is in **alpha** on Android.
 - Release comparison and library intelligence
 - Room correction with measurement wizard
 - Signal path diagnostics
+- HRTF binaural spatialization with early reflections and venue simulation
+- Playback profiles with route-class auto-switching
+- Synced lyrics (embedded, sidecar .lrc, LRCLib online)
+- Smart playlists with rule-based filtering and M3U/PLS import
+- Subsonic/Navidrome streaming client with offline cache
+- Scrobbling to Last.fm and ListenBrainz
 - Internet radio (40,000+ stations)
 - Android Auto support
-- Add-on ecosystem (Audiophile, SoundTouch, Audiobooks, Ideas Recorder)
+- Add-on ecosystem (Audiophile, SoundTouch, Audiobooks, Ideas Recorder, Lyrics, Smart Playlists, Subsonic, Scrobbling, Library Analytics)
 
 ## Tracking Progress
 
