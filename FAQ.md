@@ -72,7 +72,7 @@ Echobox adds a complete DSP chain alongside bit-perfect mode, multi-room support
 
 ### vs. Neutron
 
-Echobox differentiates with its purpose-built realtime audio engine, multi-room coordination, audio quality analysis, room correction wizard, and library intelligence features. Both offer professional-grade DSP.
+Echobox differentiates with its purpose-built realtime audio engine, multi-room coordination, audio quality analysis, room correction wizard, and library intelligence features. Both offer professional-grade DSP and surround virtualization.
 
 ---
 

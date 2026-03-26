@@ -49,6 +49,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 - HRTF binaural spatialization with early reflections and venue simulation (4 presets)
 - DSP category architecture (Technical/Experiential/AlwaysActive with independent bypass)
 - Intent-aware playback engine with per-device profile binding
+- Surround virtualization: virtual 5.1/7.1/Cinema surround from stereo sources (3 layouts, 3 upmix presets: Music/Movie/Gaming)
 - Library analytics: collection-wide quality metrics, format distributions, metadata health, duplicate detection
 - Zero telemetry, zero cloud dependency
 

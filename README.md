@@ -47,6 +47,7 @@
 - **Scrobbling** — Track listening history via Last.fm and ListenBrainz
 - **Playback Profiles** — Named DSP profiles (Auto, Bit-Perfect, Audiophile, Immersive, Compatibility) with route-class auto-switching
 - **HRTF Spatialization** — Binaural rendering with early reflections and venue simulation presets
+- **Surround Virtualization** — Virtual 5.1/7.1 surround from stereo sources with three speaker layouts and content-aware presets
 
 ---
 
@@ -192,7 +193,7 @@ Echobox uses a modular add-on system — enable only what you need:
 
 | Add-on | Capabilities |
 |--------|-------------|
-| **Audiophile** | Parametric EQ with visual editor, crossfeed, convolution, headphone profiles, AutoEQ database (~3000 models), audio analysis, room correction with A/B comparison and multi-point measurement, output dithering, perceptual volume curve, live spectrum analyzer, HRTF spatialization, artwork backfill |
+| **Audiophile** | Parametric EQ with visual editor, crossfeed, convolution, headphone profiles, AutoEQ database (~3000 models), audio analysis, room correction with A/B comparison and multi-point measurement, output dithering, perceptual volume curve, live spectrum analyzer, HRTF spatialization, surround virtualization, artwork backfill |
 | **SoundTouch** | Bose speaker control, zone grouping, preset management, TuneIn integration |
 | **Audiobooks** | Chapter tracking, bookmarks, per-book speed persistence, variable speed playback |
 | **Ideas Recorder** | Voice memos and audio recording (feeds room correction measurements) |
@@ -249,6 +250,7 @@ Every decision is explained with machine-readable reason codes and human-readabl
 | **Subsonic/Navidrome** | Yes | No | No | No |
 | **Scrobbling** | Last.fm + LB | No | No | No |
 | **HRTF Spatialization** | Yes | No | No | No |
+| **Surround Virtualization** | Yes | No | No | Yes |
 
 See the [full feature comparison](docs/comparison.md) for a detailed breakdown, including where competitors excel.
 

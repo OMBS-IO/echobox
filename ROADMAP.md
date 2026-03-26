@@ -22,6 +22,7 @@ Echobox is in **alpha** on Android.
 - Room correction with measurement wizard
 - Signal path diagnostics
 - HRTF binaural spatialization with early reflections and venue simulation
+- Surround virtualization (virtual 5.1/7.1/Cinema from stereo via multi-speaker HRTF)
 - Playback profiles with route-class auto-switching
 - Synced lyrics (embedded, sidecar .lrc, LRCLib online)
 - Smart playlists with rule-based filtering and M3U/PLS import

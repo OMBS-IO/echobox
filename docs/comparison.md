@@ -40,7 +40,7 @@ How does Echobox compare to other audiophile-grade Android music players? This p
 | **Bluetooth Codec Detection** | SBC, AAC, aptX, aptX HD, aptX Adaptive, LDAC | Partial | No | No |
 | **Artwork Backfill** | iTunes + MusicBrainz | No | No | No |
 | **Renderer Intelligence** | 12 device profiles + learned behavior | No | No | No |
-| **Surround Virtualization** | No | No | No | Yes |
+| **Surround Virtualization** | 5.1/7.1/Cinema | No | No | Yes |
 | **Tempo/Pitch Control** | Audiobooks only | No | No | Yes (with pitch correction) |
 | **Visualization Presets** | No | Yes (rich library) | No | No |
 | **Niche Codecs** | APE, WV | TTA, MPC | Similar | Similar |
@@ -112,7 +112,6 @@ We believe in honest comparison. Here's where competitors have advantages:
 - **768kHz output** — UAPP supports higher output sample rates than Echobox for compatible DACs.
 
 ### Neutron
-- **Surround virtualization** — Neutron can simulate surround sound from stereo sources. Echobox focuses on stereo fidelity.
 - **Tempo/pitch control** — Neutron offers independent tempo and pitch adjustment for music playback. Echobox offers variable speed for audiobooks only.
 - **Cross-platform** — Available on both Android and iOS. Echobox is currently Android only.
 - **Mature audio engine** — Years of optimization across a wide range of devices, with a deep DSP toolkit including compression and additional processing stages.
