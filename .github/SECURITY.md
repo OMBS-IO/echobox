@@ -33,6 +33,6 @@ Echobox is built with security in mind:
 - **Zero cloud dependency** — No user data is transmitted to any server
 - **No telemetry or analytics** — Nothing is tracked
 - **No account required** — No credentials to protect
-- **Read-only storage access** — The app only reads your music files
+- **Minimal storage access** — The app reads your music files; file deletion (duplicate resolution) requires explicit user confirmation and uses system trash for reversibility
 - **Local network only** — SoundTouch, UPnP, and Cast operate on your LAN
 - **Zero known vulnerabilities** — Dependencies are regularly audited

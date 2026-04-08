@@ -51,6 +51,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 - Intent-aware playback engine with per-device profile binding
 - Surround virtualization: virtual 5.1/7.1/Cinema surround from stereo sources (3 layouts, 3 upmix presets: Music/Movie/Gaming)
 - Library analytics: collection-wide quality metrics, format distributions, metadata health, duplicate detection
+- Multi-strategy duplicate detection (exact content hash, metadata fuzzy matching) with quality-based keep recommendations and safe trash-based resolution
+- Custom in-app folder browser for Android (unrestricted directory selection, replaces SAF picker limitations)
+- Parallel metadata extraction for 2-5x faster library scanning on multi-core devices
 - Zero telemetry, zero cloud dependency
 
 ---

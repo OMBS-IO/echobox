@@ -32,6 +32,8 @@
 - **Multi-Room Sync** — Coordinate playback across SoundTouch, Chromecast, and UPnP/DLNA devices
 - **Audio Quality Analysis** — LUFS metering, true peak detection, dynamic range, fake hi-res detection
 - **Library Intelligence** — Compare releases, detect upsampled files, smart quality collections
+- **Duplicate Detection** — Multi-strategy duplicate finder with quality-based recommendations and safe trash-based resolution
+- **Fast Library Scanning** — Parallel metadata extraction for 2-5x faster imports on large libraries
 - **Room Correction** — Built-in measurement wizard with automatic PEQ correction
 - **Signal Path Diagnostics** — Real-time inspection of every stage from source to output
 - **Zero Cloud Dependency** — No telemetry, no analytics, no account required

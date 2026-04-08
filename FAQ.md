@@ -58,6 +58,10 @@ Echobox can decode and analyze your entire library, measuring: LUFS loudness, tr
 
 If you own multiple versions of the same album (e.g., original CD rip vs. remaster vs. hi-res download), Echobox groups them and compares quality across 6 dimensions so you can identify the best-mastered version.
 
+### Can Echobox find duplicate files in my library?
+
+Yes. Echobox uses multiple detection strategies: exact content hashing for byte-identical copies and metadata fuzzy matching for same-track-different-encoding duplicates. It automatically recommends which copy to keep based on audio quality (lossless preferred, higher bit depth, higher sample rate). Resolution is safe — files are moved to your system trash, never permanently deleted, and playlist references are cleaned up automatically.
+
 ---
 
 ## How is Echobox different?

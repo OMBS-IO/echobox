@@ -30,6 +30,9 @@ Echobox is in **alpha** on Android.
 - Scrobbling to Last.fm and ListenBrainz
 - Internet radio (40,000+ stations)
 - Android Auto support
+- Duplicate detection with quality-based recommendations and safe resolution
+- Custom folder browser for Android (unrestricted directory selection)
+- Parallel library scanning (2-5x faster imports)
 - Add-on ecosystem (Audiophile, SoundTouch, Audiobooks, Ideas Recorder, Lyrics, Smart Playlists, Subsonic, Scrobbling, Library Analytics)
 
 ## Tracking Progress
