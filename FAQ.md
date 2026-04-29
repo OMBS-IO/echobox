@@ -62,6 +62,10 @@ If you own multiple versions of the same album (e.g., original CD rip vs. remast
 
 Yes. Echobox uses multiple detection strategies: exact content hashing for byte-identical copies and metadata fuzzy matching for same-track-different-encoding duplicates. It automatically recommends which copy to keep based on audio quality (lossless preferred, higher bit depth, higher sample rate). Resolution is safe — files are moved to your system trash, never permanently deleted, and playlist references are cleaned up automatically.
 
+### Can I bulk-download lyrics for my library?
+
+Yes. The Lyrics add-on includes a library-wide scanner that queries LRCLIB for synced lyrics across every track, writing results to both the in-app cache and `.lrc` sidecar files next to your audio for portability. Scanning is parallel, cancellable, and resumable across app restarts — you can configure concurrency, skip already-tagged tracks, and retry only previously failed lookups.
+
 ---
 
 ## How is Echobox different?
@@ -97,6 +101,10 @@ Yes. Echobox integrates with Android Auto for in-car browsing and playback contr
 ### Where do I report a bug?
 
 [Open an issue](https://github.com/OMBS-IO/echobox/issues/new/choose) using the appropriate template, or reach out on [Discord](https://discord.gg/XZ3WEFu7).
+
+### How can I share diagnostic info if something goes wrong?
+
+Echobox includes a one-tap "Share Diagnostics" action that generates a structured text report — device info, app version, recent crash log, engine state, signal path snapshot, library stats, and internal logs. Paste it into a GitHub issue and we'll have everything we need to reproduce the problem. Diagnostics are generated only when you tap the action and never leave your device automatically.
 
 ### Where do I request a feature?
 

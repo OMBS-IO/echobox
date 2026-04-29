@@ -33,6 +33,10 @@ Echobox is in **alpha** on Android.
 - Duplicate detection with quality-based recommendations and safe resolution
 - Custom folder browser for Android (unrestricted directory selection)
 - Parallel library scanning (2-5x faster imports)
+- Unified volume routing across all output endpoints (local, SoundTouch, UPnP, Cast, groups)
+- Shared-mixer visibility on Platform Audio page
+- One-tap diagnostic bundle for GitHub issue reporting
+- Bulk lyrics scanner with LRCLIB integration
 - Add-on ecosystem (Audiophile, SoundTouch, Audiobooks, Ideas Recorder, Lyrics, Smart Playlists, Subsonic, Scrobbling, Library Analytics)
 
 ## Tracking Progress

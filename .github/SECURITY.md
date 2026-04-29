@@ -34,5 +34,6 @@ Echobox is built with security in mind:
 - **No telemetry or analytics** — Nothing is tracked
 - **No account required** — No credentials to protect
 - **Minimal storage access** — The app reads your music files; file deletion (duplicate resolution) requires explicit user confirmation and uses system trash for reversibility
+- **User-controlled diagnostics** — Diagnostic bundles are generated only on explicit user action; nothing is sent automatically and you control where the report goes
 - **Local network only** — SoundTouch, UPnP, and Cast operate on your LAN
 - **Zero known vulnerabilities** — Dependencies are regularly audited

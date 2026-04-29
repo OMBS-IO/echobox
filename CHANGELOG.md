@@ -54,6 +54,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 - Multi-strategy duplicate detection (exact content hash, metadata fuzzy matching) with quality-based keep recommendations and safe trash-based resolution
 - Custom in-app folder browser for Android (unrestricted directory selection, replaces SAF picker limitations)
 - Parallel metadata extraction for 2-5x faster library scanning on multi-core devices
+- Unified volume routing: hardware keys, lock-screen, notification widget, and in-app sliders all control the active output endpoint (local, SoundTouch, UPnP, Cast, or output group) with bidirectional sync
+- Shared-mixer visibility on Platform Audio: see count and usage breakdown of other apps actively mixing audio
+- One-tap diagnostic bundle: structured device/state/log report for GitHub issue submission
+- Bulk lyrics scanner: mass-download synced lyrics from LRCLIB with `.lrc` sidecar files; parallel, cancellable, and resumable across app restarts
 - Zero telemetry, zero cloud dependency
 
 ---

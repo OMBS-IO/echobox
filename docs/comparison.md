@@ -46,6 +46,7 @@ How does Echobox compare to other audiophile-grade Android music players? This p
 | **Niche Codecs** | APE, WV | TTA, MPC | Similar | Similar |
 | **iOS Support** | No | No | No | Yes |
 | **Synced Lyrics** | Yes (embedded + online) | Plugin | No | No |
+| **Bulk Lyrics Download** | LRCLIB scanner with .lrc sidecars | No | No | No |
 | **Smart Playlists** | Rule-based (17 fields) | Basic | No | No |
 | **Subsonic/Navidrome** | Yes (with offline cache) | No | No | No |
 | **Scrobbling** | Last.fm + ListenBrainz | No | No | No |
@@ -84,6 +85,8 @@ How does Echobox compare to other audiophile-grade Android music players? This p
 - **Bluetooth codec detection** — See exactly which Bluetooth codec is active (SBC, AAC, aptX, LDAC, etc.) so you know what quality your wireless connection delivers.
 
 - **Synced lyrics** — Display embedded, sidecar .lrc, or online lyrics with auto-scroll during playback. No other Android audiophile player offers built-in synced lyrics with online lookup.
+
+- **Bulk lyrics scanner** — Mass-download synced lyrics from LRCLIB across your entire library with parallel, resumable scanning that writes `.lrc` sidecar files next to your audio for portability. No other Android audiophile player offers a built-in library-wide lyrics scanner.
 
 - **Smart playlists** — Create rule-based dynamic playlists using 17 filter fields and 11 operators, or import existing M3U/PLS playlists. Rules can reference audio analysis data (dynamic range, loudness, hi-res confidence).
 

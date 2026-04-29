@@ -44,6 +44,7 @@
 - **PEQ Visual Editor** — Interactive frequency response chart for parametric EQ
 - **Internet Radio** — 40,000+ stations via Radio-Browser API
 - **Synced Lyrics** — Embedded, sidecar .lrc, and online lyrics with auto-scroll
+- **Bulk Lyrics Scanner** — Mass-download synced lyrics from LRCLIB across your entire library, with `.lrc` sidecar files for portability
 - **Smart Playlists** — Rule-based dynamic playlists with 17 filter fields and M3U/PLS import
 - **Subsonic/Navidrome** — Stream from self-hosted music servers with offline cache
 - **Scrobbling** — Track listening history via Last.fm and ListenBrainz
@@ -199,7 +200,7 @@ Echobox uses a modular add-on system — enable only what you need:
 | **SoundTouch** | Bose speaker control, zone grouping, preset management, TuneIn integration |
 | **Audiobooks** | Chapter tracking, bookmarks, per-book speed persistence, variable speed playback |
 | **Ideas Recorder** | Voice memos and audio recording (feeds room correction measurements) |
-| **Lyrics** | Synced lyrics display from embedded tags, sidecar .lrc files, and LRCLib online |
+| **Lyrics** | Synced lyrics display from embedded tags, sidecar .lrc files, and LRCLib online, plus library-wide bulk scanner |
 | **Smart Playlists** | Rule-based dynamic playlists (17 fields, 11 operators) with M3U/PLS import |
 | **Subsonic** | Browse, stream, and cache music from Subsonic/Navidrome servers |
 | **Scrobbling** | Last.fm and ListenBrainz listening history with offline queue |
