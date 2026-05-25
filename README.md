@@ -42,13 +42,13 @@
 - **Output Dithering** — Professional TPDF dither for bit-depth conversion
 - **24-bit Integer Output** — Capability-probed S24 output path for compatible DACs and Android backends, with automatic fallback to f32 when unsupported
 - **Live Spectrum Analyzer** — Real-time 64-bin FFT visualization of your audio output
-- **AutoEQ Database** — Browse ~3000 headphone EQ presets and apply in one tap
+- **AutoEQ Database** — Browse ~6,000 headphone EQ presets and apply in one tap
 - **PEQ Visual Editor** — Interactive frequency response chart for parametric EQ
 - **Internet Radio** — 40,000+ stations via Radio-Browser API
 - **Synced Lyrics** — Embedded, sidecar .lrc, and online lyrics with auto-scroll
 - **Karaoke Lyrics View** — Fullscreen synced-lyrics view with word-by-word highlighting, dominant-color theming, and deep-link support
 - **Bulk Lyrics Scanner** — Mass-download synced lyrics from LRCLIB across your entire library, with `.lrc` sidecar files for portability
-- **Smart Playlists** — Rule-based dynamic playlists with 17 filter fields and M3U/PLS import
+- **Smart Playlists** — Rule-based dynamic playlists with 22 filter fields and M3U/PLS import
 - **Subsonic/Navidrome** — Stream from self-hosted music servers with offline cache
 - **Scrobbling** — Track listening history via Last.fm and ListenBrainz
 - **Playback Profiles** — Named DSP profiles (Auto, Bit-Perfect, Audiophile, Immersive, Compatibility) with route-class auto-switching
@@ -171,14 +171,14 @@ Echobox uses a modular add-on system — enable only what you need:
 
 | Add-on | Capabilities |
 |--------|-------------|
-| **Audiophile** | Parametric EQ with visual editor, crossfeed, convolution, headphone profiles, AutoEQ database (~3000 models), audio analysis, room correction with A/B comparison and multi-point measurement, output dithering, perceptual volume curve, live spectrum analyzer, HRTF spatialization, surround virtualization, artwork backfill |
+| **Audiophile** | Parametric EQ with visual editor, crossfeed, convolution, headphone profiles, AutoEQ database (~6,000 models), audio analysis, room correction with A/B comparison and multi-point measurement, output dithering, perceptual volume curve, live spectrum analyzer, HRTF spatialization, surround virtualization, artwork backfill |
 | **SoundTouch** | Bose speaker control, zone grouping, preset management, TuneIn integration |
 | **Audiobooks** | Chapter tracking, bookmarks, per-book speed persistence, variable speed playback |
 | **Ideas Recorder** | Voice memos and audio recording (feeds room correction measurements) |
 | **Gallery** | Surface image attachments (cover.jpg, folder.jpg, embedded artwork, sidecar images) with role-filter chips, fullscreen viewer, Save-to-Photos, and per-album drill-in |
 | **Lyrics** | Synced lyrics display from embedded tags, sidecar .lrc files, and LRCLib online, plus library-wide bulk scanner and fullscreen karaoke view with word-by-word highlighting |
 | **Room Designer** | Predict-based DIY room treatment optimizer with 5-step wizard, 3D viewer, generic absorber/diffuser catalog (vendor-neutral), and min-phase FIR export to the convolution engine |
-| **Smart Playlists** | Rule-based dynamic playlists (17 fields, 11 operators) with M3U/PLS import |
+| **Smart Playlists** | Rule-based dynamic playlists (22 fields, 11 operators) with M3U/PLS import |
 | **Subsonic** | Browse, stream, and cache music from Subsonic/Navidrome servers |
 | **Scrobbling** | Last.fm and ListenBrainz listening history with offline queue |
 | **Library Analytics** | Collection-wide quality metrics, format distributions, metadata health, duplicate detection |

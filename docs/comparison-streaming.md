@@ -15,17 +15,17 @@ How does Echobox compare to Spotify, Apple Music, Qobuz, and TIDAL? This page pr
 | Feature | Echobox | Spotify | Apple Music | Qobuz | TIDAL |
 |---------|---------|---------|-------------|-------|-------|
 | **Category** | Software player | Streaming service | Streaming service | Streaming service | Streaming service |
-| **Individual price (USD/mo)** | Free during alpha — TBD at launch | $12.99 | $10.99 | $14.99 (Studio Premier) | $10.99 |
-| **Family / student tiers** | n/a | $21.99 family · $6.99 student · Free ad-supported tier | $16.99 family · $5.99 student | $24.99 family · Student available | $16.99 family · ~$5.49 student |
+| **Individual price (USD/mo)** | Free during alpha — TBD at launch | $12.99 | $10.99 | $12.99 (Studio Premier; $10.83/mo annual) | $10.99 |
+| **Family / student tiers** | n/a | $18.99 duo · $21.99 family · $6.99 student · Free ad-supported tier | $16.99 family · $5.99 student | $17.99/mo (annual) family · $4.99 student | $16.99 family · $4.99 student |
 | **Free tier** | n/a | Yes (ad-supported) | No | No | No |
 | **Catalog size** | Your own library + 40,000 internet radio stations + Subsonic/Navidrome | 100M+ | 100M+ | ~80–90M | 110M+ |
 | **Max audio quality** | 384 kHz / 32-bit FLAC, DSD256 from local files | 24-bit / 44.1 kHz FLAC (HiFi tier) | 24-bit / 192 kHz ALAC | 24-bit / 192 kHz FLAC | 24-bit / 192 kHz FLAC |
-| **Lossless** | Bit-perfect always | Yes (HiFi tier launched late 2025) | All paid tiers | All tiers | All tiers |
+| **Lossless** | Bit-perfect always | Yes (Premium subscribers, launched September 2025) | All paid tiers | All tiers | All tiers |
 | **Hi-res (>16/44.1)** | Yes (depends on source files) | No | Yes | Yes | Yes |
 | **Dolby Atmos / Spatial Audio** | No (HRTF binaural instead) | No | Yes (large catalog, head-tracked) | No | Yes (+ Sony 360 Reality Audio) |
 | **MQA** | No | No | No | No | Discontinued July 2024 |
 | **Bit-perfect USB DAC on mobile** | Yes | No | No | No | No |
-| **Built-in EQ / DSP** | 20-band PEQ + 10-band graphic EQ + crossfeed + convolution + dither + lookahead limiter | No (EQ removed from app years ago) | Basic presets only | No | No |
+| **Built-in EQ / DSP** | ReplayGain + 20-band PEQ + 10-band graphic EQ + crossfeed + convolution + dither + lookahead limiter | No (EQ removed from app years ago) | Basic presets only | No | No |
 | **Room correction** | Built-in wizard + DIY Room Treatment Designer | No | No | No | No |
 | **Audio quality analysis** | LUFS, DR, true peak, clipping, spectral, hi-res confidence | No | No | No | No |
 | **Fake hi-res detection** | Yes | n/a | n/a | n/a | n/a |
@@ -38,7 +38,7 @@ How does Echobox compare to Spotify, Apple Music, Qobuz, and TIDAL? This page pr
 | **Privacy** | No analytics, no advertising, no account required; opt-in crash reporting off by default | Full account-linked tracking | Apple ecosystem tracking | Standard streaming analytics | Standard streaming analytics |
 | **Scrobbling** | Last.fm + ListenBrainz built-in | Third-party only | No | No | No |
 | **Subsonic / Navidrome** | Yes (with offline cache) | No | No | No | No |
-| **Platforms** | Android alpha; Windows/macOS/iOS/CarPlay on roadmap | iOS / Android / web / desktop / cars / speakers | Apple ecosystem-first; Android + web | iOS / Android / web / desktop | iOS / Android / web / desktop |
+| **Platforms** | Android alpha; Windows in QA; macOS / iOS / CarPlay on roadmap | iOS / Android / web / desktop / cars / speakers | Apple ecosystem-first; Android + web | iOS / Android / web / desktop | iOS / Android / web / desktop |
 
 ---
 
@@ -69,11 +69,11 @@ We don't pretend Echobox replaces streaming services. They have major strengths 
 ### Spotify
 
 - **Vast catalog** — 100M+ tracks; the deepest reach for casual listening and new releases.
-- **Free tier** — Ad-supported tier with on-demand mobile listening (Sept 2025 update lifted the shuffle-only restriction).
+- **Free tier** — Ad-supported tier with limited on-demand control on mobile; no other major service offers a free option.
 - **Spotify Connect** — Mature device handoff ecosystem across thousands of speakers and amplifiers.
 - **Algorithmic discovery** — Discover Weekly, Daily Mixes, Release Radar, and Wrapped remain best-in-class for personalized recommendations.
 - **Social features** — Collaborative playlists, follow-friends activity, shared listening.
-- **HiFi tier finally arrived** — Lossless 24-bit / 44.1 kHz FLAC launched in late 2025 in 50+ markets at no extra charge to Premium subscribers.
+- **Lossless finally arrived** — 24-bit / 44.1 kHz FLAC launched September 10, 2025, rolling out across 50+ markets through October at no extra charge to Premium subscribers.
 
 ### Apple Music
 
@@ -94,7 +94,7 @@ We don't pretend Echobox replaces streaming services. They have major strengths 
 ### TIDAL
 
 - **Largest single catalog** — 110M+ tracks.
-- **One unified tier** — HiFi and HiFi Plus merged in 2025 to a single $10.99/mo tier covering FLAC up to 24/192, Dolby Atmos, *and* Sony 360 Reality Audio.
+- **One unified tier** — HiFi and HiFi Plus merged on April 10, 2024 into a single $10.99/mo tier covering FLAC up to 24/192, Dolby Atmos, *and* Sony 360 Reality Audio.
 - **TIDAL Connect** — Native multi-room control across a wide range of hi-fi hardware (Naim, Linn, Arcam, etc.).
 - **Moved past MQA** — TIDAL fully removed MQA in July 2024 in favor of open FLAC, eliminating the licensing and quality-debate baggage.
 - **DJ-mixing integration** — $9/mo add-on for native Serato and Rekordbox integration.

@@ -34,7 +34,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 - Lookahead limiter with zero-overshoot guarantee
 - True Bauer crossfeed with inter-aural time delay and head-shadow filtering
 - Live spectrum analyzer (64-bin real-time FFT)
-- AutoEQ headphone database (~3000 models, one-click import)
+- AutoEQ headphone database (~6,000 models, one-click import)
 - PEQ visual editor with frequency response chart
 - Room correction A/B comparison toggle
 - Multi-point room measurement (1/3/5 positions with power-domain averaging)
@@ -42,7 +42,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 - Bit-perfect convolution bypass and exclusive mode sample rate lock
 - Gapless/Crossfade selectable track transitions
 - Synced lyrics display (embedded tags, sidecar .lrc, LRCLib online API)
-- Smart playlists with rule engine (17 filter fields, 11 operators, 6 presets) and M3U/PLS import
+- Smart playlists with rule engine (22 filter fields, 11 operators, 6 presets) and M3U/PLS import
 - Subsonic/Navidrome streaming client with offline cache and download
 - Scrobbling to Last.fm and ListenBrainz with offline queue
 - Playback profiles (Auto, Bit-Perfect, Audiophile, Immersive, Compatibility) with route-class auto-switching

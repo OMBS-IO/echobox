@@ -37,7 +37,7 @@ How does Echobox compare to other audiophile-grade Android music players? This p
 | **Output Dithering** | TPDF (16/20/24-bit) | No | No | No |
 | **24-bit Integer Output** | Capability-probed S24 with f32 fallback | No | No | No |
 | **Perceptual Volume** | Cubic curve | No | No | No |
-| **AutoEQ Database** | ~3000 headphones | No | No | No |
+| **AutoEQ Database** | ~6,000 headphones | No | No | No |
 | **Live Spectrum** | 64-bin real-time | No | No | Spectrum only |
 | **PEQ Visual Editor** | FR chart | No | No | Yes |
 | **Lookahead Limiter** | Zero-overshoot (64-frame) | No | No | No |
@@ -89,7 +89,7 @@ How does Echobox compare to other audiophile-grade Android music players? This p
 
 - **Lookahead limiter** — A predictive digital limiter that looks ahead 64 frames to prevent clipping before it happens. Zero overshoot guaranteed. No other mobile player offers this.
 
-- **AutoEQ headphone database** — Browse ~3,000 headphone correction profiles and apply in one tap. No external tools or measurement rigs needed.
+- **AutoEQ headphone database** — Browse ~6,000 headphone correction profiles and apply in one tap. No external tools or measurement rigs needed.
 
 - **Renderer intelligence** — Echobox learns the behavior of your network audio devices over time — tracking seek reliability, startup latency, and sync stability to optimize multi-room coordination automatically.
 
@@ -103,7 +103,7 @@ How does Echobox compare to other audiophile-grade Android music players? This p
 
 - **Gallery add-on** — Surfaces every image attachment in your library (embedded, sidecar, folder-level) with role-filter chips, fullscreen viewer, per-album drill-in, and Save-to-Photos. Other players show one artwork per track at best.
 
-- **Smart playlists** — Create rule-based dynamic playlists using 17 filter fields and 11 operators, or import existing M3U/PLS playlists. Rules can reference audio analysis data (dynamic range, loudness, hi-res confidence).
+- **Smart playlists** — Create rule-based dynamic playlists using 22 filter fields and 11 operators, or import existing M3U/PLS playlists. Rules can reference audio analysis data (dynamic range, loudness, hi-res confidence).
 
 - **Subsonic/Navidrome streaming** — Browse and stream your self-hosted music library with offline caching. No other audiophile player integrates with Subsonic-compatible servers.
 
