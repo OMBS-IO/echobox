@@ -2,7 +2,7 @@
 
 How does Echobox compare to other audiophile-grade Android music players? This page provides a factual, feature-by-feature comparison to help you choose the right player for your needs.
 
-> **Disclaimer:** This comparison is based on publicly available information as of March 2026. Features may have changed. If you notice an inaccuracy, please [open an issue](https://github.com/OMBS-IO/echobox/issues/new?template=general_feedback.yml) and we'll correct it.
+> **Disclaimer:** This comparison is based on publicly available information as of May 2026. Features may have changed. If you notice an inaccuracy, please [open an issue](https://github.com/OMBS-IO/echobox/issues/new?template=general_feedback.yml) and we'll correct it.
 
 **See also:** [Hardware Streamer & Platform Comparison](comparison-hardware.md) · [Streaming Service Comparison](comparison-streaming.md)
 
@@ -54,7 +54,7 @@ How does Echobox compare to other audiophile-grade Android music players? This p
 | **Synced Lyrics** | Yes (embedded + online) | Plugin | No | No |
 | **Karaoke Lyrics View** | Word-by-word highlight, fullscreen, dominant-color theming | No | No | No |
 | **Bulk Lyrics Download** | LRCLIB scanner with .lrc sidecars | No | No | No |
-| **Smart Playlists** | Rule-based (17 fields) | Basic | No | No |
+| **Smart Playlists** | Rule-based (22 fields) | Basic | No | No |
 | **Subsonic/Navidrome** | Yes (with offline cache) | No | No | No |
 | **Scrobbling** | Last.fm + ListenBrainz | No | No | No |
 | **Playback Profiles** | 5 profiles + auto-switch | No | No | No |

@@ -2,7 +2,7 @@
 
 How does Echobox compare to dedicated audiophile streamers and platforms like Roon, Eversolo, and WiiM? This page provides an honest, feature-by-feature look across different product categories.
 
-**A note on categories:** Echobox is a software-only music player that runs on your phone with whatever DAC you attach. Roon is a software platform with a server + Roon Ready endpoint ecosystem. Eversolo and WiiM are dedicated hardware streamers with built-in DACs and (in some cases) amplifiers. These products target overlapping audiophile use cases — local libraries, room correction, multi-room, bit-perfect playback — but they aren't direct competitors. This page exists to help you understand where each one fits.
+**A note on categories:** **Echobox** is a software music player that runs on your phone — bit-perfect to any USB DAC you attach, with optional Chromecast / UPnP / SoundTouch streaming targets. **Roon** is a software *and* hardware business: a Core server (run on your own PC or NAS, or on one of Roon's first-party Nucleus appliances) feeds a Roon Ready endpoint ecosystem, all controlled from desktop and mobile apps. **Eversolo** and **WiiM** are self-contained hardware streamers (with built-in DACs and, in some cases, amplifiers) controlled from a mobile app — no separate server required. These products target overlapping audiophile use cases — local libraries, room correction, multi-room, bit-perfect playback — but they aren't direct competitors. This page exists to help you understand where each one fits.
 
 > **Disclaimer:** This comparison is based on publicly available information as of May 2026. Features and pricing may have changed. If you notice an inaccuracy, please [open an issue](https://github.com/OMBS-IO/echobox/issues/new?template=general_feedback.yml) and we'll correct it.
 
@@ -14,30 +14,31 @@ How does Echobox compare to dedicated audiophile streamers and platforms like Ro
 
 | Feature | Echobox | Roon | Eversolo | WiiM |
 |---------|---------|------|----------|------|
-| **Category** | Software player | Software platform + endpoints | Hardware streamer family | Hardware streamer/amp family |
+| **Category** | Software player + optional USB DAC / streaming targets | Software platform + first-party servers (Nucleus) + Roon Ready endpoints | Self-contained hardware streamer + mobile control | Self-contained hardware streamer/amp + mobile control |
 | **Form factor** | Phone app (Android-first) | Server software + Roon Ready endpoints | Standalone box with 6"+ touchscreen | Compact box or integrated amplifier |
-| **Hardware cost** | None (uses your phone) | $0 if you own a server; $499 Nucleus One, $3,999 Nucleus Titan | $890–$3,999 depending on model | $99–$379 depending on model |
-| **Subscription** | None | $14.99/mo or $829 lifetime | None | None |
-| **Built-in DAC** | No (uses USB DAC) | No (endpoint-dependent) | Yes (ESS / AKM, varies by model) | Yes (TI / AKM / ESS, varies by model) |
-| **Built-in amplifier** | No | No | No | WiiM Amp / Amp Pro only (60W) |
+| **Hardware cost** | None (uses your phone) | $0 if you own a server; $499 Nucleus One, $3,699 Nucleus Titan | $1,000–$3,200 (US); ~€890–€3,790 (EU) | $99–$529 depending on model |
+| **Subscription** | None | $12.49/mo (annual) / $14.99/mo / $829 lifetime | None | None |
+| **Built-in DAC** | No (uses USB DAC) | No (endpoint-dependent) | Yes — ES9038Q2M (A6 Gen 2), AK4191EQ + AK4499EX (A8), ES9039PRO (A10) | Yes (TI / AKM / ESS, varies by model) |
+| **Built-in amplifier** | No | No | No | WiiM Amp / Amp Pro (60 W) / Amp Ultra (100 W @ 8 Ω) |
 | **Onboard storage** | Phone storage | No (NAS / external) | Yes — NVMe up to 16 TB (DMP-A10) | No (NAS / USB) |
-| **Max sample rate** | 384 kHz | 768 kHz | 768 kHz | 768 kHz (Pro / Pro Plus); 384 kHz (Amp Pro / Ultra); 192 kHz (Mini / Amp) |
+| **Max sample rate** | 384 kHz | 768 kHz | 768 kHz | 768 kHz (Pro / Pro Plus); 192 kHz internal / 384 kHz USB-out (Ultra); 384 kHz (Amp Pro); 192 kHz (Mini / Amp) |
 | **DSD playback** | DSD256 (PCM-converted) | DSD512 native | DSD512 native | DSD512 (Pro / Pro Plus only) — Ultra omits DSD |
 | **MQA** | No | Yes (with mid-chain DSP, unique) | Yes | Pro / Pro Plus only, via TIDAL Connect |
 | **Bit-perfect USB DAC** | Yes | Yes (via endpoints) | Yes | Yes |
 | **Bundled streaming services** | None (use local files, internet radio, or Subsonic/Navidrome) | Tidal + Qobuz | Tidal + Qobuz + Spotify + Apple Music (AirPlay) + Deezer | Spotify + Tidal + Qobuz + Amazon + Deezer + many more |
 | **Local library** | Yes | Yes (files / NAS / UPnP) | Yes (onboard NVMe + NAS) | Yes (NAS / UPnP / USB) |
 | **Parametric EQ** | 20 bands | Via MUSE DSP | 10-band | Amp Pro / Ultra only |
-| **Graphic EQ** | 10 bands | Not built-in | No | 10-band + 26 presets (Ultra) |
+| **Graphic EQ** | 10 bands | Not built-in | Yes (DMP-A6 / A8 / A10) | 10-band + 26 presets (Ultra) |
 | **Convolution / IR loading** | Yes (built-in) | Yes (MUSE) | DMP-A10 only | No |
 | **Room correction** | Built-in wizard, A/B toggle, multi-point, Flat/Harman/HouseCurve/Custom targets | MUSE convolution | EvoTune on DMP-A10 only | RoomFit on Amp Pro / Ultra |
 | **Room Treatment Designer** | Predict-based, 3D viewer, FIR export | No | No | No |
 | **Crossfeed** | Bauer with ITD (3 presets) | Yes | No | No |
-| **HRTF / surround virtualization** | 5.1/7.1/Cinema with 4 venue presets | No | No | No |
+| **HRTF spatialization** | Binaural with 4 venue presets (Studio / Concert Hall / Club / Open Air) | No | No | No |
+| **Surround virtualization** | Virtual 5.1 / 7.1 from stereo, 3 speaker layouts | No | No | No |
 | **Output dithering** | TPDF (16/20/24-bit) | Not exposed | No | No |
 | **Lookahead limiter** | Zero-overshoot (64-frame) | No | No | No |
 | **Live spectrum** | 64-bin real-time | No | No | No |
-| **AutoEQ database** | ~3,000 headphones | No | No | No |
+| **AutoEQ database** | ~6,000 headphone profiles | No | No | No |
 | **Audio quality analysis** | LUFS, DR, true peak, clipping, spectral, hi-res confidence | No | No | No |
 | **Fake hi-res detection** | Yes | No | No | No |
 | **Release comparison** | 6-dimension quality comparison | No | No | No |
@@ -45,10 +46,10 @@ How does Echobox compare to dedicated audiophile streamers and platforms like Ro
 | **Multi-room** | SoundTouch + Chromecast + UPnP (cross-protocol) | RAAT + AirPlay 2 + Chromecast | AirPlay 2 + Chromecast | Linkplay + AirPlay 2 + Chromecast |
 | **Synced lyrics** | Yes (embedded + LRCLib + karaoke view) | Yes | Limited | Limited |
 | **Scrobbling** | Last.fm + ListenBrainz | Via plugins | No | No |
-| **Smart playlists** | Rule-based (17 fields) | Yes (Roon 2.0) | No | No |
+| **Smart playlists** | Rule-based (22 fields) | Yes (Roon 2.0) | No | No |
 | **Subsonic / Navidrome** | Yes (with offline cache) | No | No | No |
-| **Mobile-first / portable** | Yes (phone) | ARC for remote streaming | No (desktop hardware) | No (desktop hardware) |
-| **Platforms** | Android alpha; Windows/macOS/iOS/CarPlay on roadmap | iOS, Android, macOS, Windows | Android-based on-device UI + iOS/Android remote app | WiiM Home (iOS / Android / web) |
+| **Runs entirely on phone (no extra hardware)** | Yes | No — server + endpoint required; ARC app for away-from-home | No — hardware required; phone is the remote (iOS / Android app) | No — hardware required; phone is the remote (WiiM Home app) |
+| **Platforms** | Android alpha; Windows in QA; macOS / iOS / CarPlay on roadmap | iOS, Android, macOS, Windows | Android-based on-device UI + iOS/Android remote app | WiiM Home (iOS / Android / web) |
 | **Price (Echobox)** | TBD — free during alpha | n/a | n/a | n/a |
 
 ---
@@ -63,7 +64,7 @@ Features not offered by any of the three hardware platforms above:
 - **DIY Room Treatment Designer** — Predict-based room optimizer with 5-step wizard, modal/image-source/RT60 modeling, 3D room viewer, vendor-neutral catalog, and min-phase FIR export to the convolution engine. Complements measurement-based correction.
 - **Output dithering** — Professional TPDF dither exposed as a first-class DSP stage. Standard in mastering studios, rare in consumer hardware.
 - **Lookahead limiter** — 64-frame predictive limiter with a zero-overshoot guarantee.
-- **AutoEQ database** — ~3,000 headphone correction profiles available one-tap inside the app.
+- **AutoEQ database** — ~6,000 headphone correction profiles available one-tap inside the app.
 - **Pocket-portable, no extras** — No server to run, no Wi-Fi network required, no separate hardware to buy. Plug headphones or a USB DAC into your phone and you're listening at full quality.
 - **Cross-protocol multi-room** — Coordinate playback across SoundTouch zones, Chromecast targets, UPnP/DLNA renderers, *and* the phone itself in a single synchronized group. None of these platforms span all three protocols.
 - **Subsonic / Navidrome integration** — Stream your self-hosted library with offline cache. Not natively supported by Roon, Eversolo, or WiiM.
@@ -94,7 +95,7 @@ Trade-offs: a recurring subscription (or $829 lifetime) on top of any endpoint h
 
 - **Onboard NVMe storage** — Slot up to 4 TB (DMP-A6/A8) or 16 TB (DMP-A10) of internal storage directly into the unit. No NAS or external drive required.
 - **Built-in touchscreen UI** — 6"+ on-device control surface; no separate phone or tablet needed for everyday use.
-- **Flagship integrated DACs** — ESS ES9038Q2M (DMP-A6), AKM AK4499EX (DMP-A8), ESS ES9039PRO with OCXO clocks (DMP-A10).
+- **Flagship integrated DACs** — ESS ES9038Q2M (DMP-A6 Gen 2), AKM AK4191EQ + AK4499EX (DMP-A8), ESS ES9039PRO with OCXO clocks (DMP-A10).
 - **Native MQA + DSD512** — Full hardware support for the high-end format spectrum.
 - **EvoTune room correction (DMP-A10)** — Convolution-based FIR room correction with five target curves, smartphone or EM-01 mic measurement, parametric EQ pre-correction stage, and subwoofer management.
 - **Roon Ready** — All current Eversolo streamers can act as Roon endpoints if you also subscribe to Roon.
@@ -104,8 +105,8 @@ Trade-offs: substantial up-front hardware cost; desktop-bound; minimal DSP outsi
 
 ### WiiM
 
-- **Best value entry point** — WiiM Mini starts at $99. The Pro Plus ($219) and Ultra ($329) deliver a substantial chunk of audiophile-streamer functionality at a fraction of competitor pricing.
-- **Integrated amplifier options** — WiiM Amp ($299) and Amp Pro ($379) bundle DAC, streamer, and 60 W speaker amplifier into one box. Plug passive speakers straight in.
+- **Best value entry point** — WiiM Mini starts at $99. The Pro Plus ($219) and Ultra ($329) deliver a substantial chunk of audiophile-streamer functionality at a fraction of competitor pricing. The current lineup also includes Amp Ultra ($529), Sound and Sound Lite all-in-one speakers, and the Sub Pro subwoofer.
+- **Integrated amplifier options** — WiiM Amp ($299), Amp Pro ($379), and Amp Ultra ($529) bundle DAC, streamer, and amplifier into one box (60 W on Amp / Amp Pro; 100 W @ 8 Ω on Amp Ultra). Plug passive speakers straight in.
 - **Broadest streaming-service integration** — Native support for Spotify, Tidal, Qobuz, Amazon Music, Deezer, iHeartRadio, Pandora, TuneIn, and more inside the WiiM Home app.
 - **Multi-protocol multi-room** — AirPlay 2 + Chromecast + proprietary Linkplay; play across mixed-brand devices.
 - **RoomFit room correction** — Stereo or individual-channel correction with smartphone microphone measurement on Amp Pro and Ultra.
