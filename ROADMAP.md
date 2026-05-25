@@ -12,7 +12,7 @@ Echobox is in **alpha** on Android.
 
 ## What's Built
 
-- Tri-stack audio engine (Flutter + Rust + Zig)
+- Purpose-built realtime audio engine with zero-allocation, lock-free signal path
 - Full format support (FLAC, DSD, ALAC, WAV, AIFF, AAC, OGG, Opus, MP3, WavPack, APE)
 - 9-stage DSP chain with parametric EQ, crossfeed, convolution, limiter, dither, and more
 - Bit-perfect USB DAC playback

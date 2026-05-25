@@ -37,7 +37,6 @@ If you want to see a feature implemented or a bug prioritized, add a thumbs-up r
 ### Join the Discussion
 
 - [GitHub Discussions](https://github.com/OMBS-IO/echobox/discussions) — Feature ideas, Q&A, audio setup showcases
-- [Discord](https://discord.gg/XZ3WEFu7) — Real-time chat with the community
 - [Reddit](https://reddit.com/r/echobox) — Broader discussion
 
 ### Improve Documentation

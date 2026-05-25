@@ -19,7 +19,7 @@ Neither camp gives audiophiles and serious music listeners everything they need 
 
 ### A purpose-built audio engine
 
-Echobox isn't built on top of Android's media framework or a generic C++ audio library. It uses a dedicated architecture with **Rust** for the core engine and **Zig** for the realtime audio path — designed from day one for professional-grade audio processing with zero compromises.
+Echobox isn't built on top of Android's media framework or a generic off-the-shelf audio library. It uses a purpose-built, zero-allocation realtime audio engine with a lock-free signal path — designed from day one for professional-grade audio processing with zero compromises.
 
 The result: a 9-stage DSP chain that runs with zero allocations in the audio callback, ensuring glitch-free playback even under heavy processing load.
 
@@ -76,4 +76,4 @@ We believe in being upfront:
 
 Echobox is currently in alpha. [Sign up at ombs.io](https://ombs.io) to get early access.
 
-Have questions? Join us on [Discord](https://discord.gg/XZ3WEFu7) or browse the [FAQ](../FAQ.md).
+Have questions? Browse the [FAQ](../FAQ.md) or join the conversation in [GitHub Discussions](https://github.com/OMBS-IO/echobox/discussions).

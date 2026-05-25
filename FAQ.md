@@ -88,11 +88,11 @@ Yes. Sections can be reordered, hidden, or pinned, and each section has list/com
 
 ### vs. Poweramp
 
-Echobox features a Rust + Zig audio engine (vs. C++), built-in audio quality analysis with fake hi-res detection, multi-room coordination, room correction, release comparison, and full signal path diagnostics.
+Echobox features a purpose-built realtime audio engine, built-in audio quality analysis with fake hi-res detection, multi-room coordination, room correction, release comparison, and full signal path diagnostics.
 
 ### vs. USB Audio Player Pro (UAPP)
 
-Echobox adds a complete DSP chain alongside bit-perfect mode, multi-room support, audio analysis, library intelligence, and a modern Flutter UI. UAPP focuses primarily on USB DAC bit-perfect output.
+Echobox adds a complete DSP chain alongside bit-perfect mode, multi-room support, audio analysis, library intelligence, and a modern, responsive UI. UAPP focuses primarily on USB DAC bit-perfect output.
 
 ### vs. Neutron
 
@@ -116,7 +116,7 @@ Yes. Echobox integrates with Android Auto for in-car browsing and playback contr
 
 ### Where do I report a bug?
 
-[Open an issue](https://github.com/OMBS-IO/echobox/issues/new/choose) using the appropriate template, or reach out on [Discord](https://discord.gg/XZ3WEFu7).
+[Open an issue](https://github.com/OMBS-IO/echobox/issues/new/choose) using the appropriate template, or start a thread in [GitHub Discussions](https://github.com/OMBS-IO/echobox/discussions).
 
 ### How can I share diagnostic info if something goes wrong?
 

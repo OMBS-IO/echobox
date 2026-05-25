@@ -9,15 +9,13 @@
 <p align="center">
   <a href="https://ombs.io"><img src="https://img.shields.io/badge/Platform-Android-3ddc84?logo=android&logoColor=white" alt="Platform: Android" /></a>
   <a href="https://ombs.io"><img src="https://img.shields.io/badge/Audio-Up_to_384kHz_/_DSD256-4F6EF7" alt="Audio: Up to 384kHz / DSD256" /></a>
-  <a href="#architecture"><img src="https://img.shields.io/badge/Architecture-Flutter_+_Rust_+_Zig-orange" alt="Architecture: Flutter + Rust + Zig" /></a>
   <a href="https://ombs.io"><img src="https://img.shields.io/badge/Status-Alpha-yellow" alt="Status: Alpha" /></a>
   <a href="https://ombs.io"><img src="https://img.shields.io/badge/Website-ombs.io-blue" alt="Website" /></a>
-  <a href="https://discord.gg/XZ3WEFu7"><img src="https://img.shields.io/badge/Discord-Join-5865F2?logo=discord&logoColor=white" alt="Discord" /></a>
 </p>
 
 ---
 
-**Echobox** is an audiophile-grade Android music player built on a tri-stack architecture: **Flutter** for the UI, **Rust** for the core engine, and **Zig** for the realtime audio path. It delivers bit-perfect playback through USB DACs, supports hi-res formats up to 384kHz FLAC and DSD256, and features a professional 9-stage DSP chain. With multi-room coordination, audio quality analysis, room correction, and library intelligence, Echobox brings studio-grade listening to your pocket.
+**Echobox** is an audiophile-grade music player — currently in alpha on Android, with Windows, macOS, iOS, and CarPlay on the roadmap. It delivers bit-perfect playback through USB DACs, supports hi-res formats up to 384kHz FLAC and DSD256, and features a professional 9-stage DSP chain. With multi-room coordination, audio quality analysis, room correction, and library intelligence, Echobox brings studio-grade listening to your devices.
 
 > **Status:** Echobox is currently in **alpha**. [Sign up for early access](https://ombs.io) to be notified when the beta launches.
 
@@ -56,34 +54,6 @@
 - **Playback Profiles** — Named DSP profiles (Auto, Bit-Perfect, Audiophile, Immersive, Compatibility) with route-class auto-switching
 - **HRTF Spatialization** — Binaural rendering with early reflections and venue simulation presets
 - **Surround Virtualization** — Virtual 5.1/7.1 surround from stereo sources with three speaker layouts and content-aware presets
-
----
-
-## Architecture
-
-Echobox uses a **tri-stack architecture** designed for professional audio quality on mobile:
-
-```
-┌─────────────────────────────────────────────┐
-│              Flutter (Dart)                  │
-│         UI  ·  Navigation  ·  Theming       │
-├─────────────────────────────────────────────┤
-│               Rust Core                     │
-│  Library  ·  Decoding  ·  State Machine     │
-│  Analysis  ·  Networking  ·  Convolution    │
-├─────────────────────────────────────────────┤
-│           Zig Audio Engine                  │
-│   Realtime DSP  ·  Zero Allocation          │
-│   Platform Audio APIs  ·  Lock-Free I/O     │
-└─────────────────────────────────────────────┘
-```
-
-**Why this matters:**
-- The **Zig audio callback** runs with zero allocations and no locks — it always produces audio, never drops frames
-- **Rust** handles the complex orchestration: format decoding (via Symphonia), library management (SQLite), network protocols (SoundTouch, UPnP, Cast), and the convolution engine
-- **Flutter** provides a responsive, cross-platform UI that never touches the audio path directly
-- Communication between layers is designed for zero-latency, glitch-free audio
-- The entire stack is rigorously tested across all three layers
 
 ---
 
@@ -305,7 +275,6 @@ We'd love to hear from you — whether it's a bug report, feature idea, or just 
 |---------|------|
 | **Issues** | [Report bugs & request features](https://github.com/OMBS-IO/echobox/issues) |
 | **Discussions** | [Ask questions & share setups](https://github.com/OMBS-IO/echobox/discussions) |
-| **Discord** | [Join the community](https://discord.gg/XZ3WEFu7) |
 | **Reddit** | [r/echobox](https://reddit.com/r/echobox) |
 | **X / Twitter** | [@ombs_io](https://x.com/ombs_io) |
 | **YouTube** | [@ombs_io](https://youtube.com/@ombs_io) |
@@ -336,7 +305,7 @@ Echobox supports USB audio class devices on Android. It negotiates native sample
 <details>
 <summary><strong>How is Echobox different from Poweramp, UAPP, or Neutron?</strong></summary>
 
-Echobox is built from the ground up with a Rust + Zig audio engine (no Java/C++ audio path), features full audio quality analysis with fake hi-res detection, multi-room coordination across mixed device types, a built-in room correction wizard, and release comparison intelligence. The zero-allocation Zig realtime engine and lock-free architecture are designed for uncompromising audio fidelity.
+Echobox is built around a purpose-built, zero-allocation realtime audio engine with a lock-free signal path — designed for uncompromising fidelity. On top of that, it adds full audio quality analysis with fake hi-res detection, multi-room coordination across mixed device types, a built-in room correction wizard, and release comparison intelligence.
 </details>
 
 <details>
@@ -355,7 +324,7 @@ No in-app analytics and no advertising. Optional opt-in crash reporting via Sent
 
 ## License
 
-Echobox is proprietary software. Copyright &copy; 2026 [One Man Band Studios](https://ombs.io). All rights reserved.
+Echobox is proprietary software. Copyright &copy; 2025-2026 [One Man Band Studios](https://ombs.io). All rights reserved.
 
 This repository is used for issue tracking, community discussion, and public documentation. It does not contain the Echobox source code.
 

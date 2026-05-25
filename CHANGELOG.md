@@ -9,7 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 ## [Unreleased]
 
 ### Current Alpha Features
-- Tri-stack audio engine (Flutter + Rust + Zig)
+- Purpose-built realtime audio engine with zero-allocation, lock-free signal path
 - Full format support: FLAC (384kHz/32-bit), DSD64/128/256, ALAC, WAV, AIFF, AAC, OGG Vorbis, Opus, MP3, WavPack, APE
 - 9-stage DSP chain: ReplayGain, Preamp, Parametric EQ (20 bands, visual editor), Crossfeed (Bauer with ITD), Volume (perceptual curve option), Graphic EQ (10 bands), Limiter (lookahead), Dither (TPDF)
 - Convolution engine for headphone and room correction
