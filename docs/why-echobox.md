@@ -69,7 +69,7 @@ We believe in being upfront:
 - **No bundled hardware** — Echobox is a software player. If you want an all-in-one streamer/DAC/amp box, see the [hardware streamer & platform comparison](comparison-hardware.md) for how Echobox fits next to Roon, Eversolo, and WiiM.
 - **No MQA** — Echobox does not support MQA decoding.
 - **No native DSD output** — DSD files are converted to high-quality PCM. If raw DSD bitstream output to your DAC is critical, consider [USB Audio Player Pro](https://www.intentsoftware.com/usbaudioplayerpro/).
-- **Android-first** — The current alpha trial runs on Android. Windows desktop is next (functional, in QA), then macOS, then iOS; CarPlay is pending Apple approval. Check the [roadmap](https://ombs.io/roadmap) for live status.
+- **Cross-platform with phased rollout** — Echobox runs today on Android, iOS, Windows, macOS, and Linux. The public alpha is rolling out Android-first while desktop and tablet UI polish wraps up; other platforms join the rollout in sequence. Sign up at [ombs.io](https://ombs.io) for early access on your platform. CarPlay is pending Apple approval. Check the [roadmap](https://ombs.io/roadmap) for live status.
 
 ---
 

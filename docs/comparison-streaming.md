@@ -38,7 +38,7 @@ How does Echobox compare to Spotify, Apple Music, Qobuz, and TIDAL? This page pr
 | **Privacy** | No analytics, no advertising, no account required; opt-in crash reporting off by default | Full account-linked tracking | Apple ecosystem tracking | Standard streaming analytics | Standard streaming analytics |
 | **Scrobbling** | Last.fm + ListenBrainz built-in | Third-party only | No | No | No |
 | **Subsonic / Navidrome** | Yes (with offline cache) | No | No | No | No |
-| **Platforms** | Android alpha; Windows in QA; macOS / iOS / CarPlay on roadmap | iOS / Android / web / desktop / cars / speakers | Apple ecosystem-first; Android + web | iOS / Android / web / desktop | iOS / Android / web / desktop |
+| **Platforms** | Android, iOS, Windows, macOS, Linux (public alpha rolling out Android-first; CarPlay pending Apple) | iOS / Android / web / desktop / cars / speakers | Apple ecosystem-first; Android + web | iOS / Android / web / desktop | iOS / Android / web / desktop |
 
 ---
 

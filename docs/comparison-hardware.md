@@ -2,7 +2,7 @@
 
 How does Echobox compare to dedicated audiophile streamers and platforms like Roon, Eversolo, and WiiM? This page provides an honest, feature-by-feature look across different product categories.
 
-**A note on categories:** **Echobox** is a software music player that runs on your phone — bit-perfect to any USB DAC you attach, with optional Chromecast / UPnP / SoundTouch streaming targets. **Roon** is a software *and* hardware business: a Core server (run on your own PC or NAS, or on one of Roon's first-party Nucleus appliances) feeds a Roon Ready endpoint ecosystem, all controlled from desktop and mobile apps. **Eversolo** and **WiiM** are self-contained hardware streamers (with built-in DACs and, in some cases, amplifiers) controlled from a mobile app — no separate server required. These products target overlapping audiophile use cases — local libraries, room correction, multi-room, bit-perfect playback — but they aren't direct competitors. This page exists to help you understand where each one fits.
+**A note on categories:** **Echobox** is a cross-platform software music player — runs today on Android, iOS, Windows, macOS, and Linux — bit-perfect to any USB DAC you attach, with optional Chromecast / UPnP / SoundTouch streaming targets. The public alpha is rolling out Android-first while desktop and tablet UI polish wraps up. **Roon** is a software *and* hardware business: a Core server (run on your own PC or NAS, or on one of Roon's first-party Nucleus appliances) feeds a Roon Ready endpoint ecosystem, all controlled from desktop and mobile apps. **Eversolo** and **WiiM** are self-contained hardware streamers (with built-in DACs and, in some cases, amplifiers) controlled from a mobile app — no separate server required. These products target overlapping audiophile use cases — local libraries, room correction, multi-room, bit-perfect playback — but they aren't direct competitors. This page exists to help you understand where each one fits.
 
 > **Disclaimer:** This comparison is based on publicly available information as of May 2026. Features and pricing may have changed. If you notice an inaccuracy, please [open an issue](https://github.com/OMBS-IO/echobox/issues/new?template=general_feedback.yml) and we'll correct it.
 
@@ -15,8 +15,8 @@ How does Echobox compare to dedicated audiophile streamers and platforms like Ro
 | Feature | Echobox | Roon | Eversolo | WiiM |
 |---------|---------|------|----------|------|
 | **Category** | Software player + optional USB DAC / streaming targets | Software platform + first-party servers (Nucleus) + Roon Ready endpoints | Self-contained hardware streamer + mobile control | Self-contained hardware streamer/amp + mobile control |
-| **Form factor** | Phone app (Android-first) | Server software + Roon Ready endpoints | Standalone box with 6"+ touchscreen | Compact box or integrated amplifier |
-| **Hardware cost** | None (uses your phone) | $0 if you own a server; $499 Nucleus One, $3,699 Nucleus Titan | $1,000–$3,200 (US); ~€890–€3,790 (EU) | $99–$529 depending on model |
+| **Form factor** | Phone / tablet / desktop app (Android, iOS, Windows, macOS, Linux) | Server software + Roon Ready endpoints | Standalone box with 6"+ touchscreen | Compact box or integrated amplifier |
+| **Hardware cost** | None (Echobox is software) | $0 if you own a server; $499 Nucleus One, $3,699 Nucleus Titan | $1,000–$3,200 depending on model | $99–$529 depending on model |
 | **Subscription** | None | $12.49/mo (annual) / $14.99/mo / $829 lifetime | None | None |
 | **Built-in DAC** | No (uses USB DAC) | No (endpoint-dependent) | Yes — ES9038Q2M (A6 Gen 2), AK4191EQ + AK4499EX (A8), ES9039PRO (A10) | Yes (TI / AKM / ESS, varies by model) |
 | **Built-in amplifier** | No | No | No | WiiM Amp / Amp Pro (60 W) / Amp Ultra (100 W @ 8 Ω) |
@@ -48,8 +48,8 @@ How does Echobox compare to dedicated audiophile streamers and platforms like Ro
 | **Scrobbling** | Last.fm + ListenBrainz | Via plugins | No | No |
 | **Smart playlists** | Rule-based (22 fields) | Yes (Roon 2.0) | No | No |
 | **Subsonic / Navidrome** | Yes (with offline cache) | No | No | No |
-| **Runs entirely on phone (no extra hardware)** | Yes | No — server + endpoint required; ARC app for away-from-home | No — hardware required; phone is the remote (iOS / Android app) | No — hardware required; phone is the remote (WiiM Home app) |
-| **Platforms** | Android alpha; Windows in QA; macOS / iOS / CarPlay on roadmap | iOS, Android, macOS, Windows | Android-based on-device UI + iOS/Android remote app | WiiM Home (iOS / Android / web) |
+| **Self-contained software (no required server or hardware)** | Yes — runs on Android, iOS, Windows, macOS, Linux | No — server + endpoint required; ARC app for away-from-home | No — hardware required; phone is the remote (iOS / Android app) | No — hardware required; phone is the remote (WiiM Home app) |
+| **Platforms** | Android, iOS, Windows, macOS, Linux (public alpha rolling out Android-first; CarPlay pending Apple) | iOS, Android, macOS, Windows | Android-based on-device UI + iOS/Android remote app | WiiM Home (iOS / Android / web) |
 | **Price (Echobox)** | TBD — free during alpha | n/a | n/a | n/a |
 
 ---
@@ -83,7 +83,7 @@ We believe in honest comparison. Each of these platforms has clear strengths Ech
 
 - **Unmatched metadata depth** — Album reviews, artist bios, credits, concert dates, and Roon's proprietary **Valence** discovery engine. Nothing on Android comes close.
 - **RAAT bit-perfect multi-room** — Roon's proprietary streaming protocol delivers up to PCM 768 kHz/32-bit and DSD512 across an ecosystem of 1,000+ Roon Ready certified endpoints from Chord, Naim, Lumin, dCS, and many more.
-- **Mature cross-platform clients today** — iOS, Android, macOS, and Windows clients available now. Echobox is Android-first with desktop and iOS in the roadmap.
+- **Mature cross-platform clients today** — iOS, Android, macOS, and Windows clients available now with polished UIs across form factors. Echobox runs on the same set of platforms today (plus Linux) but its public alpha is rolling out Android-first while desktop and tablet UI polish wraps up.
 - **Roon ARC** — Remote streaming away from home, with CarPlay and Android Auto support expanding.
 - **MQA with mid-chain DSP** — Roon is the only platform that can apply DSP to MQA content while still letting an MQA-capable DAC render the post-processed stream.
 - **Native streaming-service integration** — Tidal and Qobuz catalogs appear alongside your local library, all in one UI.

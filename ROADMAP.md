@@ -8,7 +8,7 @@ This page provides a condensed view. For the most up-to-date information, check 
 
 ## Current Status
 
-Echobox is in **alpha** on Android.
+Echobox runs today on Android, iOS, Windows, macOS, and Linux. The public **alpha** is rolling out Android-first while desktop and tablet UI polish wraps up; other platforms join the rollout in sequence. Sign up at [ombs.io](https://ombs.io) for early access on your platform.
 
 ## What's Built
 

@@ -131,7 +131,7 @@ We believe in honest comparison. Here's where competitors have advantages:
 
 ### Neutron
 - **Tempo/pitch control** — Neutron offers independent tempo and pitch adjustment for music playback. Echobox offers variable speed for audiobooks only.
-- **Cross-platform** — Available on both Android and iOS today. Echobox is being built Android-first, with Windows desktop next (functional, in QA), then macOS and iOS in development.
+- **Cross-platform** — Available on both Android and iOS today, with a long track record of cross-platform polish. Echobox runs on Android, iOS, Windows, macOS, and Linux today as well, but its public alpha is rolling out Android-first while desktop and tablet UI polish wraps up.
 - **Mature audio engine** — Years of optimization across a wide range of devices, with a deep DSP toolkit including compression and additional processing stages.
 
 ---

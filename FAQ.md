@@ -102,7 +102,7 @@ For a row-by-row breakdown across all four Android players, see the [Android pla
 
 ### vs. hardware streamers (Roon, Eversolo, WiiM)
 
-Echobox runs on your phone with whatever DAC you attach — no separate server, no dedicated streamer box, no subscription. Hardware platforms generally win on built-in DACs, onboard storage, and integrated streaming-service browsing; Echobox wins on portability, depth of DSP and library intelligence, room correction with a built-in measurement wizard, and cross-protocol multi-room across SoundTouch, Chromecast, and UPnP/DLNA. Full breakdown: [hardware streamer & platform comparison](docs/comparison-hardware.md).
+Echobox runs on your phone, tablet, or desktop (Android, iOS, Windows, macOS, Linux) with whatever DAC you attach — no separate server, no dedicated streamer box, no subscription. Hardware platforms generally win on built-in DACs, onboard storage, and integrated streaming-service browsing; Echobox wins on portability, depth of DSP and library intelligence, room correction with a built-in measurement wizard, and cross-protocol multi-room across SoundTouch, Chromecast, and UPnP/DLNA. Full breakdown: [hardware streamer & platform comparison](docs/comparison-hardware.md).
 
 ### vs. streaming services (Spotify, Apple Music, Qobuz, TIDAL)
 
@@ -114,7 +114,7 @@ Echobox is a *player*, not a *catalog* — it plays your own files, internet rad
 
 ### Is Echobox available on iOS or desktop?
 
-Echobox is being built Android-first. The current alpha trial runs on Android only. Windows desktop is next (functional, currently in QA), followed by macOS, then iOS. CarPlay support is pending Apple approval. Check the [roadmap](https://ombs.io/roadmap) for live status.
+Yes — Echobox runs today on Android, iOS, Windows, macOS, and Linux. The public alpha is rolling out Android-first while desktop and tablet UI polish wraps up; other platforms join the rollout in sequence. Sign up at [ombs.io](https://ombs.io) for early access on your platform. CarPlay support is pending Apple approval. Check the [roadmap](https://ombs.io/roadmap) for live status.
 
 ### Does it work with Android Auto?
 

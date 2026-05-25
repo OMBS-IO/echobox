@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://ombs.io"><img src="https://img.shields.io/badge/Platform-Android-3ddc84?logo=android&logoColor=white" alt="Platform: Android" /></a>
+  <a href="https://ombs.io"><img src="https://img.shields.io/badge/Platforms-Android%20iOS%20Windows%20macOS%20Linux-4F6EF7" alt="Platforms: Android, iOS, Windows, macOS, Linux" /></a>
   <a href="https://ombs.io"><img src="https://img.shields.io/badge/Audio-Up_to_384kHz_/_DSD256-4F6EF7" alt="Audio: Up to 384kHz / DSD256" /></a>
   <a href="https://ombs.io"><img src="https://img.shields.io/badge/Status-Alpha-yellow" alt="Status: Alpha" /></a>
   <a href="https://ombs.io"><img src="https://img.shields.io/badge/Website-ombs.io-blue" alt="Website" /></a>
@@ -15,9 +15,9 @@
 
 ---
 
-**Echobox** is an audiophile-grade music player — currently in alpha on Android, with Windows, macOS, iOS, and CarPlay on the roadmap. It delivers bit-perfect playback through USB DACs, supports hi-res formats up to 384kHz FLAC and DSD256, and features a professional 9-stage DSP chain. With multi-room coordination, audio quality analysis, room correction, and library intelligence, Echobox brings studio-grade listening to your devices.
+**Echobox** is an audiophile-grade music player — cross-platform across Android, iOS, Windows, macOS, and Linux today, with the public alpha rolling out Android-first while desktop and tablet UI polish wraps up. It delivers bit-perfect playback through USB DACs, supports hi-res formats up to 384kHz FLAC and DSD256, and features a professional 9-stage DSP chain. With multi-room coordination, audio quality analysis, room correction, and library intelligence, Echobox brings studio-grade listening to your devices.
 
-> **Status:** Echobox is currently in **alpha**. [Sign up for early access](https://ombs.io) to be notified when the beta launches.
+> **Status:** Echobox is currently in **alpha**, rolling out Android-first. [Sign up at ombs.io](https://ombs.io) for early access on your platform.
 
 ---
 
@@ -245,15 +245,13 @@ Also: [Detailed format support](docs/format-support.md) | [Why Echobox?](docs/wh
 
 ## Platform & Roadmap
 
-**Current status:** Android alpha (sign up at [ombs.io](https://ombs.io) to trial)
+**Current status:** public alpha rolling out Android-first. The audio core, DSP chain, and library engine run today on Android, iOS, Windows, macOS, and Linux — sign up at [ombs.io](https://ombs.io) for early access on your platform.
 
-**Platform release order:**
+**Public alpha rollout:**
 
-1. Android — currently in alpha trial
-2. Windows desktop — functional, in QA
-3. macOS desktop — in development
-4. iOS — in development
-5. CarPlay — pending Apple approval
+- Android — currently in public alpha
+- iOS / iPadOS, Windows, macOS, Linux — functional today; joining the public alpha in sequence as desktop and tablet UI polish completes
+- CarPlay — pending Apple approval
 
 Echobox is being built by [One Man Band Studios](https://ombs.io).
 
@@ -315,7 +313,7 @@ Echobox is built around a purpose-built, zero-allocation realtime audio engine w
 <details>
 <summary><strong>When will iOS or desktop be available?</strong></summary>
 
-Echobox is being built Android-first. The current alpha trial runs on Android only. Windows desktop is next (functional, currently in QA), followed by macOS, then iOS. CarPlay support is pending Apple approval. Check the [roadmap](https://ombs.io/roadmap) for live status.
+Yes — Echobox runs today on Android, iOS, Windows, macOS, and Linux. The public alpha is rolling out Android-first while desktop and tablet UI polish wraps up; other platforms join the rollout in sequence. Sign up at [ombs.io](https://ombs.io) for early access on your platform. CarPlay support is pending Apple approval. Check the [roadmap](https://ombs.io/roadmap) for live status.
 </details>
 
 <details>
