@@ -98,6 +98,16 @@ Echobox adds a complete DSP chain alongside bit-perfect mode, multi-room support
 
 Echobox differentiates with its purpose-built realtime audio engine, multi-room coordination, audio quality analysis, room correction wizard, and library intelligence features. Both offer professional-grade DSP and surround virtualization.
 
+For a row-by-row breakdown across all four Android players, see the [Android player comparison](docs/comparison.md).
+
+### vs. hardware streamers (Roon, Eversolo, WiiM)
+
+Echobox runs on your phone with whatever DAC you attach — no separate server, no dedicated streamer box, no subscription. Hardware platforms generally win on built-in DACs, onboard storage, and integrated streaming-service browsing; Echobox wins on portability, depth of DSP and library intelligence, room correction with a built-in measurement wizard, and cross-protocol multi-room across SoundTouch, Chromecast, and UPnP/DLNA. Full breakdown: [hardware streamer & platform comparison](docs/comparison-hardware.md).
+
+### vs. streaming services (Spotify, Apple Music, Qobuz, TIDAL)
+
+Echobox is a *player*, not a *catalog* — it plays your own files, internet radio, and Subsonic/Navidrome servers. Streaming services give you on-demand access to tens of millions of tracks; Echobox gives you a real audiophile DSP chain (PEQ, convolution, dither, lookahead limiter), room correction, full audio quality analysis with fake-hi-res detection, and bit-perfect USB DAC output on mobile. The two complement each other. Full breakdown: [streaming service comparison](docs/comparison-streaming.md).
+
 ---
 
 ## Platform

@@ -4,6 +4,8 @@ How does Echobox compare to other audiophile-grade Android music players? This p
 
 > **Disclaimer:** This comparison is based on publicly available information as of March 2026. Features may have changed. If you notice an inaccuracy, please [open an issue](https://github.com/OMBS-IO/echobox/issues/new?template=general_feedback.yml) and we'll correct it.
 
+**See also:** [Hardware Streamer & Platform Comparison](comparison-hardware.md) · [Streaming Service Comparison](comparison-streaming.md)
+
 ---
 
 ## Feature Comparison

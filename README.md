@@ -233,7 +233,11 @@ Every decision is explained with machine-readable reason codes and human-readabl
 | **HRTF Spatialization** | Yes | No | No | No |
 | **Surround Virtualization** | Yes | No | No | Yes |
 
-See the [full feature comparison](docs/comparison.md) for a detailed breakdown, including where competitors excel.
+Echobox sits across three categories of audio products. See the detailed comparisons for each:
+
+- [Android player comparison](docs/comparison.md) — vs. Poweramp, UAPP, Neutron
+- [Hardware streamer & platform comparison](docs/comparison-hardware.md) — vs. Roon, Eversolo, WiiM
+- [Streaming service comparison](docs/comparison-streaming.md) — vs. Spotify, Apple Music, Qobuz, TIDAL
 
 Also: [Detailed format support](docs/format-support.md) | [Why Echobox?](docs/why-echobox.md)
 

@@ -65,7 +65,8 @@ The signal path diagnostics view shows exactly what Echobox is doing to your aud
 
 We believe in being upfront:
 
-- **No commercial streaming services** — Echobox plays your local music library, internet radio, and self-hosted Subsonic/Navidrome servers. It does not integrate with Spotify, Tidal, Apple Music, or other commercial streaming platforms.
+- **No commercial streaming services** — Echobox plays your local music library, internet radio, and self-hosted Subsonic/Navidrome servers. It does not integrate with Spotify, Tidal, Apple Music, or other commercial streaming platforms. See the [streaming service comparison](comparison-streaming.md) for how Echobox stacks up alongside (not against) them.
+- **No bundled hardware** — Echobox is a software player. If you want an all-in-one streamer/DAC/amp box, see the [hardware streamer & platform comparison](comparison-hardware.md) for how Echobox fits next to Roon, Eversolo, and WiiM.
 - **No MQA** — Echobox does not support MQA decoding.
 - **No native DSD output** — DSD files are converted to high-quality PCM. If raw DSD bitstream output to your DAC is critical, consider [USB Audio Player Pro](https://www.intentsoftware.com/usbaudioplayerpro/).
 - **Android-first** — The current alpha trial runs on Android. Windows desktop is next (functional, in QA), then macOS, then iOS; CarPlay is pending Apple approval. Check the [roadmap](https://ombs.io/roadmap) for live status.
