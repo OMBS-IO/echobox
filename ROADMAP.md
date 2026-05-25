@@ -37,7 +37,19 @@ Echobox is in **alpha** on Android.
 - Shared-mixer visibility on Platform Audio page
 - One-tap diagnostic bundle for GitHub issue reporting
 - Bulk lyrics scanner with LRCLIB integration
-- Add-on ecosystem (Audiophile, SoundTouch, Audiobooks, Ideas Recorder, Lyrics, Smart Playlists, Subsonic, Scrobbling, Library Analytics)
+- Spotify-style fullscreen karaoke lyrics view with word-by-word highlighting
+- DIY Room Treatment Designer add-on (predict-based optimizer, 3D viewer, FIR export)
+- Gallery add-on (image attachment surfacing, fullscreen viewer, Save-to-Photos)
+- Customizable home page (reorder, hide, pin sections; list/compact variants)
+- Folder sidecar artwork sources (cover.jpg / folder.jpg / Cover Front.jpg) with configurable priority
+- Procedural placeholder artwork (deterministic CD-style fallback)
+- 24-bit integer audio output with capability probe and f32 fallback
+- Adaptive thermal / battery / lifecycle resource governor with Settings toggle
+- DJ + smart-playlist metadata (BPM, key, energy, danceability, mood, dual-source rating)
+- Classical-music metadata (composer, conductor, soloist, ensemble, work/movement, catalog number)
+- Huge-library hardening (100k+ tracks: deferred analysis, mid-scan resume, OOM-resistant scanning)
+- Opt-in crash reporting via Sentry (off by default; toggle in Settings → Diagnostics)
+- Add-on ecosystem (Audiophile, SoundTouch, Audiobooks, Ideas Recorder, Gallery, Lyrics, Room Designer, Smart Playlists, Subsonic, Scrobbling, Library Analytics)
 
 ## Tracking Progress
 

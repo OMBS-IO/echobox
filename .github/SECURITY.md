@@ -30,10 +30,10 @@ This policy covers the Echobox Android application. It does not cover:
 
 Echobox is built with security in mind:
 
-- **Zero cloud dependency** — No user data is transmitted to any server
-- **No telemetry or analytics** — Nothing is tracked
+- **No in-app analytics** — Zero in-app analytics, no advertising, no behavioral tracking
+- **Opt-in crash reporting** — Sentry-based crash and error reporting is off by default; you enable it explicitly in Settings → Diagnostics. When enabled, reports are stripped of PII and URL credentials before upload
+- **Local-first by design** — Music never leaves your device. Network features (SoundTouch, UPnP, Chromecast, internet radio, Subsonic, scrobbling) communicate only with the endpoints you configure
 - **No account required** — No credentials to protect
 - **Minimal storage access** — The app reads your music files; file deletion (duplicate resolution) requires explicit user confirmation and uses system trash for reversibility
 - **User-controlled diagnostics** — Diagnostic bundles are generated only on explicit user action; nothing is sent automatically and you control where the report goes
-- **Local network only** — SoundTouch, UPnP, and Cast operate on your LAN
 - **Zero known vulnerabilities** — Dependencies are regularly audited

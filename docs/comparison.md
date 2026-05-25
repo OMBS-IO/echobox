@@ -20,6 +20,7 @@ How does Echobox compare to other audiophile-grade Android music players? This p
 | **Convolution / IR Loading** | Built-in | No | Via plugin | No |
 | **ReplayGain** | Track + Album | Track + Album | Track + Album | Track + Album |
 | **Room Correction** | Built-in wizard, A/B toggle, multi-point, Flat/Harman/HouseCurve/Custom targets | No | No | No |
+| **Room Treatment Designer** | Predict-based, 3D viewer, FIR export | No | No | No |
 | **Multi-Room Playback** | SoundTouch + Chromecast + UPnP | No | No | No |
 | **Audio Quality Analysis** | LUFS, DR, True Peak, Clipping, Spectral, Hi-Res Confidence | No | No | Spectrum analyzer |
 | **Release Comparison** | 6-dimension quality comparison | No | No | No |
@@ -32,6 +33,7 @@ How does Echobox compare to other audiophile-grade Android music players? This p
 | **MQA Decoding** | No | No | Yes | No |
 | **Audiobook Support** | Chapters, bookmarks, variable speed | Basic | No | No |
 | **Output Dithering** | TPDF (16/20/24-bit) | No | No | No |
+| **24-bit Integer Output** | Capability-probed S24 with f32 fallback | No | No | No |
 | **Perceptual Volume** | Cubic curve | No | No | No |
 | **AutoEQ Database** | ~3000 headphones | No | No | No |
 | **Live Spectrum** | 64-bin real-time | No | No | Spectrum only |
@@ -39,6 +41,8 @@ How does Echobox compare to other audiophile-grade Android music players? This p
 | **Lookahead Limiter** | Zero-overshoot (64-frame) | No | No | No |
 | **Bluetooth Codec Detection** | SBC, AAC, aptX, aptX HD, aptX Adaptive, LDAC | Partial | No | No |
 | **Artwork Backfill** | iTunes + MusicBrainz | No | No | No |
+| **Folder Sidecar Artwork** | cover.jpg / folder.jpg / Cover Front.jpg with configurable priority | No | No | No |
+| **Gallery Browser** | Image attachments with fullscreen viewer + Save-to-Photos | No | No | No |
 | **Renderer Intelligence** | 12 device profiles + learned behavior | No | No | No |
 | **Surround Virtualization** | 5.1/7.1/Cinema | No | No | Yes |
 | **Tempo/Pitch Control** | Audiobooks only | No | No | Yes (with pitch correction) |
@@ -46,6 +50,7 @@ How does Echobox compare to other audiophile-grade Android music players? This p
 | **Niche Codecs** | APE, WV | TTA, MPC | Similar | Similar |
 | **iOS Support** | No | No | No | Yes |
 | **Synced Lyrics** | Yes (embedded + online) | Plugin | No | No |
+| **Karaoke Lyrics View** | Word-by-word highlight, fullscreen, dominant-color theming | No | No | No |
 | **Bulk Lyrics Download** | LRCLIB scanner with .lrc sidecars | No | No | No |
 | **Smart Playlists** | Rule-based (17 fields) | Basic | No | No |
 | **Subsonic/Navidrome** | Yes (with offline cache) | No | No | No |
@@ -62,7 +67,11 @@ How does Echobox compare to other audiophile-grade Android music players? This p
 
 - **Built-in room correction** — Measure your room with a test signal, and Echobox automatically generates a correction profile. No external tools or plugins required.
 
+- **DIY Room Treatment Designer** — Predict-based optimizer that complements measurement-based room correction: 5-step wizard, modal/image-source/RT60 modeling, 3D room viewer, vendor-neutral catalog, and min-phase FIR export to the convolution engine. No other mobile player offers room treatment design.
+
 - **Output dithering** — Professional TPDF dither converts quantization noise into inaudible white noise when outputting to 16-bit devices. Standard practice in mastering studios; unique among mobile players.
+
+- **24-bit integer output** — Capability-probed S24 output path with automatic f32 fallback on incompatible devices and backends. Few mobile players expose true 24-bit integer output as a first-class capability.
 
 - **Live spectrum analyzer** — Real-time 64-bin FFT visualization lets you see what's actually playing through the DSP chain.
 
@@ -86,7 +95,11 @@ How does Echobox compare to other audiophile-grade Android music players? This p
 
 - **Synced lyrics** — Display embedded, sidecar .lrc, or online lyrics with auto-scroll during playback. No other Android audiophile player offers built-in synced lyrics with online lookup.
 
+- **Karaoke lyrics view** — Fullscreen synced-lyrics surface with word-by-word highlighting and dominant-color theming derived from the current track's artwork. No other Android audiophile player offers a built-in karaoke-style fullscreen lyrics experience.
+
 - **Bulk lyrics scanner** — Mass-download synced lyrics from LRCLIB across your entire library with parallel, resumable scanning that writes `.lrc` sidecar files next to your audio for portability. No other Android audiophile player offers a built-in library-wide lyrics scanner.
+
+- **Gallery add-on** — Surfaces every image attachment in your library (embedded, sidecar, folder-level) with role-filter chips, fullscreen viewer, per-album drill-in, and Save-to-Photos. Other players show one artwork per track at best.
 
 - **Smart playlists** — Create rule-based dynamic playlists using 17 filter fields and 11 operators, or import existing M3U/PLS playlists. Rules can reference audio analysis data (dynamic range, loudness, hi-res confidence).
 
@@ -116,7 +129,7 @@ We believe in honest comparison. Here's where competitors have advantages:
 
 ### Neutron
 - **Tempo/pitch control** — Neutron offers independent tempo and pitch adjustment for music playback. Echobox offers variable speed for audiobooks only.
-- **Cross-platform** — Available on both Android and iOS. Echobox is currently Android only.
+- **Cross-platform** — Available on both Android and iOS today. Echobox is being built Android-first, with Windows desktop next (functional, in QA), then macOS and iOS in development.
 - **Mature audio engine** — Years of optimization across a wide range of devices, with a deep DSP toolkit including compression and additional processing stages.
 
 ---

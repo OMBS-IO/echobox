@@ -16,7 +16,7 @@ Pricing details will be announced closer to launch. Visit [ombs.io](https://ombs
 
 ### Does Echobox collect any data?
 
-No. Zero telemetry, zero analytics, no cloud dependency, no account required. Your music stays on your device. Network features (SoundTouch, UPnP, Chromecast, internet radio) operate over your local network only.
+No in-app analytics and no advertising. Optional opt-in crash reporting via Sentry can be enabled in Settings → Diagnostics — it's off by default, and you control whether to turn it on. When enabled, crash reports are stripped of PII and URL credentials before upload. Your music stays on your device. Network features (SoundTouch, UPnP, Chromecast, internet radio) operate over your local network only.
 
 ---
 
@@ -66,6 +66,22 @@ Yes. Echobox uses multiple detection strategies: exact content hashing for byte-
 
 Yes. The Lyrics add-on includes a library-wide scanner that queries LRCLIB for synced lyrics across every track, writing results to both the in-app cache and `.lrc` sidecar files next to your audio for portability. Scanning is parallel, cancellable, and resumable across app restarts — you can configure concurrency, skip already-tagged tracks, and retry only previously failed lookups.
 
+### Does Echobox have a fullscreen karaoke lyrics view?
+
+Yes. The Lyrics add-on includes a Spotify-style fullscreen view with word-by-word highlighting synced to playback, dominant-color theming derived from the current track's artwork, and deep-link support so external launchers can jump straight into the lyrics view.
+
+### What is the Room Designer add-on?
+
+The Room Designer is a predict-based DIY room treatment optimizer that complements the measurement-based Room Correction wizard. It walks you through a 5-step room setup (dimensions, materials, listening position, speakers, treatment goals), models acoustic behavior (modal response, image-source method, RT60), and recommends treatment placements from a vendor-neutral generic catalog. A 3D viewer shows your room and proposed treatments, and you can export a min-phase FIR for use in the convolution engine.
+
+### Does Echobox surface artwork from sidecar files?
+
+Yes. In addition to embedded artwork, Echobox reads cover.jpg, folder.jpg, and Cover Front.jpg sidecars next to your audio files. You can configure a priority order in settings (embedded vs. filename-based vs. any image), with the first available match winning. When no artwork is found, Echobox renders a deterministic CD-style placeholder so your library never shows blank tiles.
+
+### Can I customize the home page?
+
+Yes. Sections can be reordered, hidden, or pinned, and each section has list/compact display variants and a configurable item count. A "Feeling Lucky" surface offers random-but-quality-weighted picks from your library.
+
 ---
 
 ## How is Echobox different?
@@ -88,7 +104,7 @@ Echobox differentiates with its purpose-built realtime audio engine, multi-room 
 
 ### Is Echobox available on iOS or desktop?
 
-Currently Android only. Check the [roadmap](https://ombs.io/roadmap) for platform expansion plans.
+Echobox is being built Android-first. The current alpha trial runs on Android only. Windows desktop is next (functional, currently in QA), followed by macOS, then iOS. CarPlay support is pending Apple approval. Check the [roadmap](https://ombs.io/roadmap) for live status.
 
 ### Does it work with Android Auto?
 

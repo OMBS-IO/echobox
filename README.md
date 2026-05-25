@@ -32,18 +32,23 @@
 - **Multi-Room Sync** — Coordinate playback across SoundTouch, Chromecast, and UPnP/DLNA devices
 - **Audio Quality Analysis** — LUFS metering, true peak detection, dynamic range, fake hi-res detection
 - **Library Intelligence** — Compare releases, detect upsampled files, smart quality collections
+- **Customizable Home Page** — Reorder, hide, or pin sections; per-section list/compact variants and "Feeling Lucky" surface
+- **Folder Artwork Sources** — Reads cover.jpg, folder.jpg, and Cover Front.jpg sidecars in addition to embedded artwork, with a configurable priority order
 - **Duplicate Detection** — Multi-strategy duplicate finder with quality-based recommendations and safe trash-based resolution
 - **Fast Library Scanning** — Parallel metadata extraction for 2-5x faster imports on large libraries
 - **Room Correction** — Built-in measurement wizard with automatic PEQ correction
+- **DIY Room Treatment Designer** — Predict-based optimizer with 5-step wizard, 3D room viewer, and FIR export to the convolution engine. Complements the measurement-based room correction
 - **Signal Path Diagnostics** — Real-time inspection of every stage from source to output
-- **Zero Cloud Dependency** — No telemetry, no analytics, no account required
+- **No Analytics, No Ads, No Account** — Zero in-app analytics, no advertising, no account required for the free tier. Optional opt-in crash reporting (off by default) is the only telemetry path and is fully under your control
 - **Gapless / Crossfade Toggle** — Choose between sample-accurate gapless or smooth crossfade transitions
 - **Output Dithering** — Professional TPDF dither for bit-depth conversion
+- **24-bit Integer Output** — Capability-probed S24 output path for compatible DACs and Android backends, with automatic fallback to f32 when unsupported
 - **Live Spectrum Analyzer** — Real-time 64-bin FFT visualization of your audio output
 - **AutoEQ Database** — Browse ~3000 headphone EQ presets and apply in one tap
 - **PEQ Visual Editor** — Interactive frequency response chart for parametric EQ
 - **Internet Radio** — 40,000+ stations via Radio-Browser API
 - **Synced Lyrics** — Embedded, sidecar .lrc, and online lyrics with auto-scroll
+- **Karaoke Lyrics View** — Fullscreen synced-lyrics view with word-by-word highlighting, dominant-color theming, and deep-link support
 - **Bulk Lyrics Scanner** — Mass-download synced lyrics from LRCLIB across your entire library, with `.lrc` sidecar files for portability
 - **Smart Playlists** — Rule-based dynamic playlists with 17 filter fields and M3U/PLS import
 - **Subsonic/Navidrome** — Stream from self-hosted music servers with offline cache
@@ -200,7 +205,9 @@ Echobox uses a modular add-on system — enable only what you need:
 | **SoundTouch** | Bose speaker control, zone grouping, preset management, TuneIn integration |
 | **Audiobooks** | Chapter tracking, bookmarks, per-book speed persistence, variable speed playback |
 | **Ideas Recorder** | Voice memos and audio recording (feeds room correction measurements) |
-| **Lyrics** | Synced lyrics display from embedded tags, sidecar .lrc files, and LRCLib online, plus library-wide bulk scanner |
+| **Gallery** | Surface image attachments (cover.jpg, folder.jpg, embedded artwork, sidecar images) with role-filter chips, fullscreen viewer, Save-to-Photos, and per-album drill-in |
+| **Lyrics** | Synced lyrics display from embedded tags, sidecar .lrc files, and LRCLib online, plus library-wide bulk scanner and fullscreen karaoke view with word-by-word highlighting |
+| **Room Designer** | Predict-based DIY room treatment optimizer with 5-step wizard, 3D viewer, generic absorber/diffuser catalog (vendor-neutral), and min-phase FIR export to the convolution engine |
 | **Smart Playlists** | Rule-based dynamic playlists (17 fields, 11 operators) with M3U/PLS import |
 | **Subsonic** | Browse, stream, and cache music from Subsonic/Navidrome servers |
 | **Scrobbling** | Last.fm and ListenBrainz listening history with offline queue |
@@ -220,6 +227,7 @@ Real-time transparency into exactly what Echobox is doing to your audio:
 - Bit-perfect status with disqualification reasons
 - Group sync health (per-member drift, corrections applied)
 - Renderer capability profiles (advertised + learned)
+- Runtime Governor card (background-work throttling state under thermal, battery, and lifecycle constraints)
 - Live spectrum analyzer (64-bin real-time FFT)
 
 ---
@@ -263,7 +271,15 @@ Also: [Detailed format support](docs/format-support.md) | [Why Echobox?](docs/wh
 
 ## Platform & Roadmap
 
-**Current status:** Android alpha
+**Current status:** Android alpha (sign up at [ombs.io](https://ombs.io) to trial)
+
+**Platform release order:**
+
+1. Android — currently in alpha trial
+2. Windows desktop — functional, in QA
+3. macOS desktop — in development
+4. iOS — in development
+5. CarPlay — pending Apple approval
 
 Echobox is being built by [One Man Band Studios](https://ombs.io).
 
@@ -326,13 +342,13 @@ Echobox is built from the ground up with a Rust + Zig audio engine (no Java/C++ 
 <details>
 <summary><strong>When will iOS or desktop be available?</strong></summary>
 
-Echobox is currently Android only. Check the [roadmap](https://ombs.io/roadmap) for platform expansion plans.
+Echobox is being built Android-first. The current alpha trial runs on Android only. Windows desktop is next (functional, currently in QA), followed by macOS, then iOS. CarPlay support is pending Apple approval. Check the [roadmap](https://ombs.io/roadmap) for live status.
 </details>
 
 <details>
 <summary><strong>Does Echobox collect any data?</strong></summary>
 
-No. Echobox has zero telemetry, zero analytics, no cloud dependency, and no account requirement. Your music stays on your device. Network features (SoundTouch, UPnP, Chromecast, internet radio) operate over your local network only.
+No in-app analytics and no advertising. Optional opt-in crash reporting via Sentry can be enabled in Settings → Diagnostics — it's off by default and you control whether to turn it on. Your music stays on your device. Network features (SoundTouch, UPnP, Chromecast, internet radio) operate over your local network only.
 </details>
 
 ---

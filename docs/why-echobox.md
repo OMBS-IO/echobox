@@ -57,7 +57,7 @@ The signal path diagnostics view shows exactly what Echobox is doing to your aud
 
 **Multi-room audio enthusiasts** who want to control playback across mixed device types from a single app without cloud dependencies.
 
-**Privacy-conscious users** who want a music player that doesn't track them. Echobox has zero telemetry, zero analytics, and no account requirement.
+**Privacy-conscious users** who want a music player that doesn't track them. Echobox has no in-app analytics, no advertising, no account requirement, and only opt-in crash reporting (off by default).
 
 ---
 
@@ -68,7 +68,7 @@ We believe in being upfront:
 - **No commercial streaming services** — Echobox plays your local music library, internet radio, and self-hosted Subsonic/Navidrome servers. It does not integrate with Spotify, Tidal, Apple Music, or other commercial streaming platforms.
 - **No MQA** — Echobox does not support MQA decoding.
 - **No native DSD output** — DSD files are converted to high-quality PCM. If raw DSD bitstream output to your DAC is critical, consider [USB Audio Player Pro](https://www.intentsoftware.com/usbaudioplayerpro/).
-- **Android only** — Currently available on Android. Check the [roadmap](https://ombs.io/roadmap) for other platforms.
+- **Android-first** — The current alpha trial runs on Android. Windows desktop is next (functional, in QA), then macOS, then iOS; CarPlay is pending Apple approval. Check the [roadmap](https://ombs.io/roadmap) for live status.
 
 ---
 

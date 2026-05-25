@@ -63,6 +63,14 @@ Bit-perfect mode is ideal when your DAC or amplifier handles volume control and 
 
 ---
 
+## 24-bit Integer Output
+
+Echobox can output true 24-bit integer audio (S24) on devices and backends that support it. At connection time, Echobox probes the active output backend (AAudio, WASAPI, CoreAudio, ALSA) for S24 support and falls back to 32-bit float when the backend or device does not expose an S24 path. The format negotiation result is visible in the Signal Path view alongside the existing sample-rate and bit-depth diagnostics.
+
+This is distinct from the existing TPDF output dithering (which converts internal 32-bit float to 16/20/24-bit *quantized* output): 24-bit integer output sends genuinely 24-bit native samples to the driver, avoiding any final-stage quantization where possible.
+
+---
+
 ## Bluetooth Codec Detection
 
 When connected to Bluetooth audio devices, Echobox detects the active codec:
@@ -119,7 +127,7 @@ Echobox supports ReplayGain for automatic loudness normalization:
 | WavPack | APEv2 | Binary tag | Yes |
 | APE | APEv2 + ID3v2 | Binary tag | Yes |
 
-Echobox can also backfill missing artwork from iTunes and MusicBrainz.
+Echobox also reads sidecar artwork (cover.jpg, folder.jpg, Cover Front.jpg) next to your audio files with a configurable priority order against embedded artwork. When no artwork is found, a deterministic CD-style placeholder is rendered. Missing artwork can also be backfilled from iTunes and MusicBrainz.
 
 ---
 

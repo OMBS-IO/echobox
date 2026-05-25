@@ -24,7 +24,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 - Adaptive route policy engine
 - Internet radio (40,000+ stations via Radio-Browser)
 - Android Auto integration
-- Add-on ecosystem: Audiophile, SoundTouch, Audiobooks, Ideas Recorder, Lyrics, Smart Playlists, Subsonic, Scrobbling, Library Analytics
+- Add-on ecosystem: Audiophile, SoundTouch, Audiobooks, Ideas Recorder, Gallery, Lyrics, Room Designer, Smart Playlists, Subsonic, Scrobbling, Library Analytics
 - Variable speed playback for audiobooks
 - Renderer intelligence with learned device profiles
 - Gapless playback across all formats
@@ -58,7 +58,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 - Shared-mixer visibility on Platform Audio: see count and usage breakdown of other apps actively mixing audio
 - One-tap diagnostic bundle: structured device/state/log report for GitHub issue submission
 - Bulk lyrics scanner: mass-download synced lyrics from LRCLIB with `.lrc` sidecar files; parallel, cancellable, and resumable across app restarts
-- Zero telemetry, zero cloud dependency
+- Spotify-style fullscreen lyrics view with word-by-word karaoke highlighting, dominant-color theming, and deep-link routing
+- DIY Room Treatment Designer add-on: predict-based room optimizer with 5-step wizard, 3D viewer, vendor-neutral catalog, and min-phase FIR export to the convolution engine
+- 24-bit integer audio output with capability probe and f32 fallback on incompatible devices
+- Gallery add-on: surfaces image attachments (covers, sidecar images, embedded artwork) with role-filter chips, fullscreen viewer, Save-to-Photos, and per-album drill-in
+- Customizable home page: reorder, show/hide, and pin sections; per-section list/compact variants and "Feeling Lucky" surface
+- Folder sidecar artwork: reads cover.jpg, folder.jpg, and Cover Front.jpg with configurable priority order alongside embedded artwork
+- Procedural placeholder artwork: deterministic CD-style fallback rendered when no embedded or sidecar artwork is available
+- Adaptive thermal / battery / lifecycle governor: throttles background work (analysis, watch-folder scanning, artwork backfill) when the device gets hot, battery is low, or the app is backgrounded, with a Runtime Governor card in Signal Path and a Settings toggle
+- Smart-playlist DJ metadata: six new fields (BPM, key, energy, danceability, mood, dual-source rating) usable as smart-playlist rules and visible in track details
+- Classical-music metadata: typed columns for composer, conductor, soloist, ensemble, performer credits, work/movement, and catalog number lifted from tags rather than overflowed into key-value storage
+- Library scaling: huge-library hardening for 100k+ track libraries (deferred analysis policy, mid-scan resume, OOM-resistant scan service); streaming discovery and deferred artwork extraction for faster cold scans
+- Opt-in crash reporting: Sentry-based crash and error telemetry, off by default with a toggle in Settings → Diagnostics; PII scrubbing and URL-credential redaction when enabled
+- No in-app analytics, no advertising, no account required for the free tier
 
 ---
 
