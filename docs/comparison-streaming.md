@@ -6,7 +6,7 @@ How does Echobox compare to Spotify, Apple Music, Qobuz, and TIDAL? This page pr
 
 > **Disclaimer:** This comparison is based on publicly available information as of May 2026. Pricing, tiers, and audio formats change frequently. If you notice an inaccuracy, please [open an issue](https://github.com/OMBS-IO/echobox/issues/new?template=general_feedback.yml) and we'll correct it.
 
-**See also:** [Android Player Comparison](comparison.md) · [Hardware Streamer & Platform Comparison](comparison-hardware.md)
+**See also:** [Android Player Comparison](comparison.md) · [Hardware Streamer & Platform Comparison](comparison-hardware.md) · [Media Server App Comparison](comparison-media-server.md)
 
 ---
 

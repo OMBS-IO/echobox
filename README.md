@@ -238,6 +238,7 @@ Echobox sits across three categories of audio products. See the detailed compari
 - [Android player comparison](docs/comparison.md) — vs. Poweramp, UAPP, Neutron
 - [Hardware streamer & platform comparison](docs/comparison-hardware.md) — vs. Roon, Eversolo, WiiM
 - [Streaming service comparison](docs/comparison-streaming.md) — vs. Spotify, Apple Music, Qobuz, TIDAL
+- [Media server app comparison](docs/comparison-media-server.md) — vs. Plexamp, Symfonium, Finamp
 
 Also: [Detailed format support](docs/format-support.md) | [Why Echobox?](docs/why-echobox.md)
 

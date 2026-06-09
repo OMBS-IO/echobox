@@ -6,7 +6,7 @@ How does Echobox compare to dedicated audiophile streamers and platforms like Ro
 
 > **Disclaimer:** This comparison is based on publicly available information as of May 2026. Features and pricing may have changed. If you notice an inaccuracy, please [open an issue](https://github.com/OMBS-IO/echobox/issues/new?template=general_feedback.yml) and we'll correct it.
 
-**See also:** [Android Player Comparison](comparison.md) · [Streaming Service Comparison](comparison-streaming.md)
+**See also:** [Android Player Comparison](comparison.md) · [Streaming Service Comparison](comparison-streaming.md) · [Media Server App Comparison](comparison-media-server.md)
 
 ---
 
