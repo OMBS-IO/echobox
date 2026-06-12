@@ -39,6 +39,8 @@ Echobox can coordinate playback across Bose SoundTouch speakers, Chromecast devi
 
 Everything runs over your local network. No cloud account required, no internet dependency.
 
+The same philosophy extends beyond playback: **Web Access** gives you a browser-based library manager and player served straight from your device with real HTTPS and PIN login, and **Beam** moves music between your Echobox devices over an encrypted LAN connection. Your library stays on your hardware and reaches every device you own — without a cloud server in the middle.
+
 ### Room correction in your pocket
 
 Echobox includes a built-in room correction wizard. Generate a test signal, capture the response with a microphone, and Echobox automatically creates a correction profile tailored to your listening environment. No external software, no laptop required.
@@ -69,7 +71,7 @@ We believe in being upfront:
 - **No bundled hardware** — Echobox is a software player. If you want an all-in-one streamer/DAC/amp box, see the [hardware streamer & platform comparison](comparison-hardware.md) for how Echobox fits next to Roon, Eversolo, and WiiM.
 - **No MQA** — Echobox does not support MQA decoding.
 - **No native DSD output** — DSD files are converted to high-quality PCM. If raw DSD bitstream output to your DAC is critical, consider [USB Audio Player Pro](https://www.intentsoftware.com/usbaudioplayerpro/).
-- **Cross-platform with phased rollout** — Echobox runs today on Android, iOS, Windows, macOS, and Linux. The public alpha is rolling out Android-first while desktop and tablet UI polish wraps up; other platforms join the rollout in sequence. Sign up at [ombs.io](https://ombs.io) for early access on your platform. CarPlay is pending Apple approval. Check the [roadmap](https://ombs.io/roadmap) for live status.
+- **Cross-platform with phased rollout** — Echobox is built cross-platform from a single core. The public alpha is rolling out Android-first; Windows and Linux have working desktop builds and join the rollout as desktop UI polish completes, while iOS and macOS are in final bring-up. Sign up at [ombs.io](https://ombs.io) for early access on your platform. CarPlay is planned alongside the iOS release. Check the [roadmap](https://ombs.io/roadmap) for live status.
 
 ---
 

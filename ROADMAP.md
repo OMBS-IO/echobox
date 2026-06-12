@@ -8,7 +8,7 @@ This page provides a condensed view. For the most up-to-date information, check 
 
 ## Current Status
 
-Echobox runs today on Android, iOS, Windows, macOS, and Linux. The public **alpha** is rolling out Android-first while desktop and tablet UI polish wraps up; other platforms join the rollout in sequence. Sign up at [ombs.io](https://ombs.io) for early access on your platform.
+Echobox is built cross-platform from a single core. The public **alpha** is rolling out Android-first; Windows and Linux have working desktop builds and join the rollout as desktop UI polish completes, while iOS and macOS are in final bring-up. Sign up at [ombs.io](https://ombs.io) for early access on your platform.
 
 ## What's Built
 
@@ -49,7 +49,15 @@ Echobox runs today on Android, iOS, Windows, macOS, and Linux. The public **alph
 - Classical-music metadata (composer, conductor, soloist, ensemble, work/movement, catalog number)
 - Huge-library hardening (100k+ tracks: deferred analysis, mid-scan resume, OOM-resistant scanning)
 - Opt-in crash reporting via Sentry (off by default; toggle in Settings → Diagnostics)
-- Add-on ecosystem (Audiophile, SoundTouch, Audiobooks, Ideas Recorder, Gallery, Lyrics, Room Designer, Smart Playlists, Subsonic, Scrobbling, Library Analytics)
+- Beam cross-device transfer (LAN discovery, PIN pairing, encrypted transfer, duplicate-aware, history with undo)
+- Web Access (browser-based library manager and player with PIN login, trusted HTTPS, 6-digit connect code, upload)
+- Restore Last Session (full-queue resume on relaunch, paused at saved position)
+- Open with Echobox (OS file associations for instant playback without library import)
+- Android homescreen widgets (three sizes, Material You theming)
+- Alternate app icons (six launcher styles, Android)
+- OS media-session integration (MPRIS on Linux, Windows taskbar + System Media Transport Controls, Android media-session hardening)
+- Files add-on (browse booklets, cue sheets, and scans alongside your music)
+- Add-on ecosystem (Audiophile, SoundTouch, Audiobooks, Ideas Recorder, Gallery, Files, Lyrics, Room Designer, Smart Playlists, Subsonic, Scrobbling, Library Analytics)
 
 ## Tracking Progress
 

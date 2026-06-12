@@ -2,7 +2,7 @@
 
 How does Echobox compare to other audiophile-grade Android music players? This page provides a factual, feature-by-feature comparison to help you choose the right player for your needs.
 
-> **Disclaimer:** This comparison is based on publicly available information as of May 2026. Features may have changed. If you notice an inaccuracy, please [open an issue](https://github.com/OMBS-IO/echobox/issues/new?template=general_feedback.yml) and we'll correct it.
+> **Disclaimer:** This comparison is based on publicly available information as of June 2026. Features may have changed. If you notice an inaccuracy, please [open an issue](https://github.com/OMBS-IO/echobox/issues/new?template=general_feedback.yml) and we'll correct it.
 
 **See also:** [Hardware Streamer & Platform Comparison](comparison-hardware.md) · [Streaming Service Comparison](comparison-streaming.md) · [Media Server App Comparison](comparison-media-server.md)
 
@@ -24,6 +24,8 @@ How does Echobox compare to other audiophile-grade Android music players? This p
 | **Room Correction** | Built-in wizard, A/B toggle, multi-point, Flat/Harman/HouseCurve/Custom targets | No | No | No |
 | **Room Treatment Designer** | Predict-based, 3D viewer, FIR export | No | No | No |
 | **Multi-Room Playback** | SoundTouch + Chromecast + UPnP | No | No | No |
+| **Browser Remote / Web Access** | Built-in LAN web server (PIN login, trusted HTTPS, upload) | No | No | No |
+| **Device-to-Device Transfer** | Beam (encrypted LAN transfer, duplicate-aware, undo) | No | No | No |
 | **Audio Quality Analysis** | LUFS, DR, True Peak, Clipping, Spectral, Hi-Res Confidence | No | No | Spectrum analyzer |
 | **Release Comparison** | 6-dimension quality comparison | No | No | No |
 | **Fake Hi-Res Detection** | Yes | No | No | No |
@@ -50,7 +52,7 @@ How does Echobox compare to other audiophile-grade Android music players? This p
 | **Tempo/Pitch Control** | Audiobooks only | No | No | Yes (with pitch correction) |
 | **Visualization Presets** | No | Yes (rich library) | No | No |
 | **Niche Codecs** | APE, WV | TTA, MPC | Similar | Similar |
-| **iOS Support** | No | No | No | Yes |
+| **iOS Support** | In bring-up | No | No | Yes |
 | **Synced Lyrics** | Yes (embedded + online) | Plugin | No | No |
 | **Karaoke Lyrics View** | Word-by-word highlight, fullscreen, dominant-color theming | No | No | No |
 | **Bulk Lyrics Download** | LRCLIB scanner with .lrc sidecars | No | No | No |
@@ -84,6 +86,10 @@ How does Echobox compare to other audiophile-grade Android music players? This p
 - **Release comparison** — If you own multiple versions of the same album, Echobox compares them across quality dimensions so you can identify the best mastering.
 
 - **Multi-room coordination** — Play to Bose SoundTouch speakers, Chromecast, UPnP/DLNA renderers, and the phone simultaneously in sync. No other mobile player offers cross-protocol multi-room.
+
+- **Web Access** — A built-in secure web server turns any browser on your network into a library manager and player: PIN login, trusted HTTPS with zero client setup, a 6-digit connect code, and browser upload. No other Android player serves its own library to the LAN.
+
+- **Beam device-to-device transfer** — Move or copy music straight between your Echobox devices over the local network: automatic discovery, PIN-protected pairing, encrypted transfer, content-hash duplicate skipping, and transfer history with undo.
 
 - **Signal path diagnostics** — See exactly what's happening to your audio at every stage, from source file to output device, with full transparency into DSP decisions.
 
@@ -131,7 +137,7 @@ We believe in honest comparison. Here's where competitors have advantages:
 
 ### Neutron
 - **Tempo/pitch control** — Neutron offers independent tempo and pitch adjustment for music playback. Echobox offers variable speed for audiobooks only.
-- **Cross-platform** — Available on both Android and iOS today, with a long track record of cross-platform polish. Echobox runs on Android, iOS, Windows, macOS, and Linux today as well, but its public alpha is rolling out Android-first while desktop and tablet UI polish wraps up.
+- **Cross-platform** — Available on both Android and iOS today, with a long track record of cross-platform polish. Echobox is built cross-platform from a single core, but its public alpha is rolling out Android-first — Windows and Linux have working desktop builds, while iOS and macOS are in final bring-up.
 - **Mature audio engine** — Years of optimization across a wide range of devices, with a deep DSP toolkit including compression and additional processing stages.
 
 ---

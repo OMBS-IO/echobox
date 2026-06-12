@@ -16,7 +16,7 @@ Pricing details will be announced closer to launch. Visit [ombs.io](https://ombs
 
 ### Does Echobox collect any data?
 
-No in-app analytics and no advertising. Optional opt-in crash reporting via Sentry can be enabled in Settings → Diagnostics — it's off by default, and you control whether to turn it on. When enabled, crash reports are stripped of PII and URL credentials before upload. Your music stays on your device. Network features (SoundTouch, UPnP, Chromecast, internet radio) operate over your local network only.
+No in-app analytics and no advertising. Optional opt-in crash reporting via Sentry can be enabled in Settings → Diagnostics — it's off by default, and you control whether to turn it on. When enabled, crash reports are stripped of PII and URL credentials before upload. Your music stays on your device. Network features (SoundTouch, UPnP, Chromecast, Web Access, Beam, internet radio) operate over your local network only.
 
 ---
 
@@ -82,6 +82,22 @@ Yes. In addition to embedded artwork, Echobox reads cover.jpg, folder.jpg, and C
 
 Yes. Sections can be reordered, hidden, or pinned, and each section has list/compact display variants and a configurable item count. A "Feeling Lucky" surface offers random-but-quality-weighted picks from your library.
 
+### Can I control Echobox from a browser?
+
+Yes. Web Access turns any browser on your local network into a library manager and player. Echobox runs a built-in secure web server with PIN login and sessions, real HTTPS with a trusted certificate (green padlock, no client setup or certificate installs), and a simple 6-digit connect code to find your device. You can browse, play, and upload files from the browser. Everything stays on your local network — no cloud relay.
+
+### How do I move music between my devices?
+
+Use Beam, Echobox's cross-device transfer. Your devices discover each other automatically on the local network, pair once with a PIN (Bluetooth-style prompt on both ends), and transfer over an encrypted connection. Transfers are duplicate-aware — tracks you already have are skipped by content hash — and a transfer history with undo keeps everything recoverable. Beam is LAN-only; your music never touches a cloud server.
+
+### Does Echobox remember my queue between sessions?
+
+Yes. Restore Last Session (on by default) rebuilds your full queue when you relaunch the app, paused exactly where you left off.
+
+### Can I play a file without adding it to my library?
+
+Yes. Echobox registers OS-level file associations, so "Open with Echobox" from your file manager plays any supported audio file instantly without importing it into your library.
+
 ---
 
 ## How is Echobox different?
@@ -114,7 +130,7 @@ Echobox is a *player*, not a *catalog* — it plays your own files, internet rad
 
 ### Is Echobox available on iOS or desktop?
 
-Yes — Echobox runs today on Android, iOS, Windows, macOS, and Linux. The public alpha is rolling out Android-first while desktop and tablet UI polish wraps up; other platforms join the rollout in sequence. Sign up at [ombs.io](https://ombs.io) for early access on your platform. CarPlay support is pending Apple approval. Check the [roadmap](https://ombs.io/roadmap) for live status.
+Echobox is built cross-platform from a single core. The public alpha is rolling out Android-first; Windows and Linux have working desktop builds and join the rollout as desktop UI polish completes, while iOS and macOS are in final bring-up. Sign up at [ombs.io](https://ombs.io) for early access on your platform. CarPlay is planned alongside the iOS release. Check the [roadmap](https://ombs.io/roadmap) for live status.
 
 ### Does it work with Android Auto?
 

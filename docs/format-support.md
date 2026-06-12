@@ -98,6 +98,10 @@ The full DSP chain remains active over Bluetooth. Bit-perfect mode is disabled s
 | Google Chromecast | Renderer handles | N/A | Device-dependent |
 | UPnP/DLNA | Renderer handles | N/A | Capability-dependent |
 
+### Output bit depth
+
+Echobox can deliver 24-bit integer output (S24) on Android and Linux, with a capability probe per device and automatic fallback to 32-bit float when the hardware doesn't accept it. Windows and macOS currently use high-quality 32-bit float output. TPDF dithering shapes the conversion to 16/20/24-bit targets.
+
 ---
 
 ## ReplayGain

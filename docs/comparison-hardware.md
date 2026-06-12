@@ -2,9 +2,9 @@
 
 How does Echobox compare to dedicated audiophile streamers and platforms like Roon, Eversolo, and WiiM? This page provides an honest, feature-by-feature look across different product categories.
 
-**A note on categories:** **Echobox** is a cross-platform software music player — runs today on Android, iOS, Windows, macOS, and Linux — bit-perfect to any USB DAC you attach, with optional Chromecast / UPnP / SoundTouch streaming targets. The public alpha is rolling out Android-first while desktop and tablet UI polish wraps up. **Roon** is a software *and* hardware business: a Core server (run on your own PC or NAS, or on one of Roon's first-party Nucleus appliances) feeds a Roon Ready endpoint ecosystem, all controlled from desktop and mobile apps. **Eversolo** and **WiiM** are self-contained hardware streamers (with built-in DACs and, in some cases, amplifiers) controlled from a mobile app — no separate server required. These products target overlapping audiophile use cases — local libraries, room correction, multi-room, bit-perfect playback — but they aren't direct competitors. This page exists to help you understand where each one fits.
+**A note on categories:** **Echobox** is a cross-platform software music player built from a single core — bit-perfect to any USB DAC you attach, with optional Chromecast / UPnP / SoundTouch streaming targets. The public alpha is rolling out Android-first; Windows and Linux have working desktop builds, while iOS and macOS are in final bring-up. **Roon** is a software *and* hardware business: a Core server (run on your own PC or NAS, or on one of Roon's first-party Nucleus appliances) feeds a Roon Ready endpoint ecosystem, all controlled from desktop and mobile apps. **Eversolo** and **WiiM** are self-contained hardware streamers (with built-in DACs and, in some cases, amplifiers) controlled from a mobile app — no separate server required. These products target overlapping audiophile use cases — local libraries, room correction, multi-room, bit-perfect playback — but they aren't direct competitors. This page exists to help you understand where each one fits.
 
-> **Disclaimer:** This comparison is based on publicly available information as of May 2026. Features and pricing may have changed. If you notice an inaccuracy, please [open an issue](https://github.com/OMBS-IO/echobox/issues/new?template=general_feedback.yml) and we'll correct it.
+> **Disclaimer:** This comparison is based on publicly available information as of June 2026. Features and pricing may have changed. If you notice an inaccuracy, please [open an issue](https://github.com/OMBS-IO/echobox/issues/new?template=general_feedback.yml) and we'll correct it.
 
 **See also:** [Android Player Comparison](comparison.md) · [Streaming Service Comparison](comparison-streaming.md) · [Media Server App Comparison](comparison-media-server.md)
 
@@ -44,12 +44,14 @@ How does Echobox compare to dedicated audiophile streamers and platforms like Ro
 | **Release comparison** | 6-dimension quality comparison | No | No | No |
 | **Signal path diagnostics** | Full chain transparency | Partial | No | No |
 | **Multi-room** | SoundTouch + Chromecast + UPnP (cross-protocol) | RAAT + AirPlay 2 + Chromecast | AirPlay 2 + Chromecast | Linkplay + AirPlay 2 + Chromecast |
+| **Browser remote / web access** | Built-in LAN web server (PIN login, trusted HTTPS, upload) | No (third-party extensions) | No | WiiM Home web interface |
+| **Device-to-device transfer** | Beam (encrypted LAN transfer, duplicate-aware, undo) | No | No | No |
 | **Synced lyrics** | Yes (embedded + LRCLib + karaoke view) | Yes | Limited | Limited |
 | **Scrobbling** | Last.fm + ListenBrainz | Via plugins | No | No |
 | **Smart playlists** | Rule-based (22 fields) | Yes (Roon 2.0) | No | No |
 | **Subsonic / Navidrome** | Yes (with offline cache) | No | No | No |
-| **Self-contained software (no required server or hardware)** | Yes — runs on Android, iOS, Windows, macOS, Linux | No — server + endpoint required; ARC app for away-from-home | No — hardware required; phone is the remote (iOS / Android app) | No — hardware required; phone is the remote (WiiM Home app) |
-| **Platforms** | Android, iOS, Windows, macOS, Linux (public alpha rolling out Android-first; CarPlay pending Apple) | iOS, Android, macOS, Windows | Android-based on-device UI + iOS/Android remote app | WiiM Home (iOS / Android / web) |
+| **Self-contained software (no required server or hardware)** | Yes — software only, any USB DAC | No — server + endpoint required; ARC app for away-from-home | No — hardware required; phone is the remote (iOS / Android app) | No — hardware required; phone is the remote (WiiM Home app) |
+| **Platforms** | Android (public alpha), Windows / Linux (working builds), iOS / macOS (in bring-up); CarPlay planned with iOS | iOS, Android, macOS, Windows | Android-based on-device UI + iOS/Android remote app | WiiM Home (iOS / Android / web) |
 | **Price (Echobox)** | TBD — free during alpha | n/a | n/a | n/a |
 
 ---
@@ -69,6 +71,8 @@ Features not offered by any of the three hardware platforms above:
 - **Cross-protocol multi-room** — Coordinate playback across SoundTouch zones, Chromecast targets, UPnP/DLNA renderers, *and* the phone itself in a single synchronized group. None of these platforms span all three protocols.
 - **Subsonic / Navidrome integration** — Stream your self-hosted library with offline cache. Not natively supported by Roon, Eversolo, or WiiM.
 - **Signal path diagnostics** — Reason-coded transcode decisions, per-stage gain values, headroom, limiter risk, group sync health, and renderer capability profiles surfaced in-app.
+- **Built-in Web Access** — The app itself serves your library to any browser on your network: PIN login, trusted HTTPS with zero client setup, a 6-digit connect code, and browser upload. No separate server box required.
+- **Beam device-to-device transfer** — Move music straight between your own Echobox devices over the LAN with encrypted, PIN-paired, duplicate-aware transfer and undo. The hardware platforms centralize storage; Beam keeps real local copies on every device.
 - **Karaoke lyrics view + bulk LRCLib scanner** — Fullscreen synced lyrics with word-by-word highlighting and dominant-color theming, plus a library-wide lyrics download tool that writes `.lrc` sidecars next to your audio.
 - **HRTF spatialization** — Binaural rendering with early reflections and four venue simulation presets (Studio, Concert Hall, Club, Open Air).
 - **No subscription, no account, no analytics** — Free during alpha; pricing TBD. Opt-in crash reporting is the only telemetry path and is off by default.
@@ -83,7 +87,7 @@ We believe in honest comparison. Each of these platforms has clear strengths Ech
 
 - **Unmatched metadata depth** — Album reviews, artist bios, credits, concert dates, and Roon's proprietary **Valence** discovery engine. Nothing on Android comes close.
 - **RAAT bit-perfect multi-room** — Roon's proprietary streaming protocol delivers up to PCM 768 kHz/32-bit and DSD512 across an ecosystem of 1,000+ Roon Ready certified endpoints from Chord, Naim, Lumin, dCS, and many more.
-- **Mature cross-platform clients today** — iOS, Android, macOS, and Windows clients available now with polished UIs across form factors. Echobox runs on the same set of platforms today (plus Linux) but its public alpha is rolling out Android-first while desktop and tablet UI polish wraps up.
+- **Mature cross-platform clients today** — iOS, Android, macOS, and Windows clients available now with polished UIs across form factors. Echobox targets the same set of platforms (plus Linux) from a single core, but its public alpha is rolling out Android-first — Windows and Linux have working desktop builds, while iOS and macOS are in final bring-up.
 - **Roon ARC** — Remote streaming away from home, with CarPlay and Android Auto support expanding.
 - **MQA with mid-chain DSP** — Roon is the only platform that can apply DSP to MQA content while still letting an MQA-capable DAC render the post-processed stream.
 - **Native streaming-service integration** — Tidal and Qobuz catalogs appear alongside your local library, all in one UI.

@@ -24,7 +24,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 - Adaptive route policy engine
 - Internet radio (40,000+ stations via Radio-Browser)
 - Android Auto integration
-- Add-on ecosystem: Audiophile, SoundTouch, Audiobooks, Ideas Recorder, Gallery, Lyrics, Room Designer, Smart Playlists, Subsonic, Scrobbling, Library Analytics
+- Add-on ecosystem: Audiophile, SoundTouch, Audiobooks, Ideas Recorder, Gallery, Files, Lyrics, Room Designer, Smart Playlists, Subsonic, Scrobbling, Library Analytics
 - Variable speed playback for audiobooks
 - Renderer intelligence with learned device profiles
 - Gapless playback across all formats
@@ -70,6 +70,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 - Classical-music metadata: typed columns for composer, conductor, soloist, ensemble, performer credits, work/movement, and catalog number lifted from tags rather than overflowed into key-value storage
 - Library scaling: huge-library hardening for 100k+ track libraries (deferred analysis policy, mid-scan resume, OOM-resistant scan service); streaming discovery and deferred artwork extraction for faster cold scans
 - Opt-in crash reporting: Sentry-based crash and error telemetry, off by default with a toggle in Settings → Diagnostics; PII scrubbing and URL-credential redaction when enabled
+- Beam cross-device transfer: move or copy music between Echobox devices on your local network — automatic discovery, PIN-protected pairing, encrypted transfer, content-hash duplicate skipping, multi-select "Beam to…", and transfer history with undo
+- Web Access: manage and play your library from any browser on your network — embedded secure web server with PIN login and sessions, trusted HTTPS certificates with zero client setup, 6-digit connect code device discovery, and browser file upload
+- Restore Last Session: relaunching the app rebuilds your full queue, paused at the saved position (on by default)
+- Open with Echobox: OS-level file associations — open any supported audio file from your file manager for instant playback without library import
+- Files add-on: browse non-audio files alongside your music (booklets, cue sheets, scans) with combined scanning and per-item detail pages with Open/Share/Save
+- Android homescreen widgets: three resizable widgets (compact bar, player with Up Next, quick-access grid) with Material You theming
+- Alternate app icons: six launcher icon styles selectable in settings (Android)
+- OS media-session integration: hardware media keys and native now-playing — MPRIS on Linux, taskbar and System Media Transport Controls on Windows, lock-screen and media-session hardening on Android
 - No in-app analytics, no advertising, no account required for the free tier
 
 ---

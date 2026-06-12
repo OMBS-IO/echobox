@@ -15,7 +15,7 @@
 
 ---
 
-**Echobox** is an audiophile-grade music player — cross-platform across Android, iOS, Windows, macOS, and Linux today, with the public alpha rolling out Android-first while desktop and tablet UI polish wraps up. It delivers bit-perfect playback through USB DACs, supports hi-res formats up to 384kHz FLAC and DSD256, and features a professional 9-stage DSP chain. With multi-room coordination, audio quality analysis, room correction, and library intelligence, Echobox brings studio-grade listening to your devices.
+**Echobox** is an audiophile-grade music player built cross-platform from a single core — Android is in public alpha now, Windows and Linux have working desktop builds, and iOS and macOS are in final bring-up. It delivers bit-perfect playback through USB DACs, supports hi-res formats up to 384kHz FLAC and DSD256, and features a professional 9-stage DSP chain. With multi-room coordination, audio quality analysis, room correction, and library intelligence, Echobox brings studio-grade listening to your devices.
 
 > **Status:** Echobox is currently in **alpha**, rolling out Android-first. [Sign up at ombs.io](https://ombs.io) for early access on your platform.
 
@@ -28,6 +28,8 @@
 - **9-Stage DSP Chain** — ReplayGain, parametric EQ, crossfeed, graphic EQ, limiter, dither, and more
 - **Convolution Engine** — Load impulse responses for headphone correction or room correction
 - **Multi-Room Sync** — Coordinate playback across SoundTouch, Chromecast, and UPnP/DLNA devices
+- **Web Access** — Manage and play your library from any browser on your network: built-in secure web server with PIN login, real HTTPS (trusted certificate, no client setup), and a simple 6-digit connect code
+- **Beam** — Move or copy music between your devices over your local network: automatic discovery, PIN-protected pairing, encrypted transfer, duplicate-aware, with transfer history and undo
 - **Audio Quality Analysis** — LUFS metering, true peak detection, dynamic range, fake hi-res detection
 - **Library Intelligence** — Compare releases, detect upsampled files, smart quality collections
 - **Customizable Home Page** — Reorder, hide, or pin sections; per-section list/compact variants and "Feeling Lucky" surface
@@ -39,6 +41,8 @@
 - **Signal Path Diagnostics** — Real-time inspection of every stage from source to output
 - **No Analytics, No Ads, No Account** — Zero in-app analytics, no advertising, no account required for the free tier. Optional opt-in crash reporting (off by default) is the only telemetry path and is fully under your control
 - **Gapless / Crossfade Toggle** — Choose between sample-accurate gapless or smooth crossfade transitions
+- **Restore Last Session** — Relaunch and your full queue comes back exactly where you left off, paused at the saved position (on by default)
+- **Open with Echobox** — Open any supported audio file from your file manager and it plays instantly, without importing into the library
 - **Output Dithering** — Professional TPDF dither for bit-depth conversion
 - **24-bit Integer Output** — Capability-probed S24 output path for compatible DACs and Android backends, with automatic fallback to f32 when unsupported
 - **Live Spectrum Analyzer** — Real-time 64-bin FFT visualization of your audio output
@@ -54,6 +58,9 @@
 - **Playback Profiles** — Named DSP profiles (Auto, Bit-Perfect, Audiophile, Immersive, Compatibility) with route-class auto-switching
 - **HRTF Spatialization** — Binaural rendering with early reflections and venue simulation presets
 - **Surround Virtualization** — Virtual 5.1/7.1 surround from stereo sources with three speaker layouts and content-aware presets
+- **Homescreen Widgets** — Three resizable Android widgets (compact bar, player with Up Next, quick-access grid) with Material You theming
+- **Alternate App Icons** — Six launcher icon styles selectable in settings (Android)
+- **OS Media Integration** — Hardware media keys and native now-playing on every platform: MPRIS on Linux, taskbar and System Media Transport Controls on Windows, lock-screen and media-session support on Android
 
 ---
 
@@ -122,6 +129,15 @@ Echobox coordinates playback across multiple output types simultaneously:
 
 ---
 
+## Your Library, Anywhere on Your Network
+
+Echobox keeps your music on your own hardware — and still lets you reach it from any device in the house. No cloud, no account, nothing leaves your network.
+
+- **Web Access** — A built-in secure web server turns any browser on your network into a library manager and player. PIN login with sessions, real HTTPS with a trusted certificate (green padlock, zero client setup), a simple 6-digit connect code to find your device, and drag-and-drop upload from the browser.
+- **Beam** — Cross-device transfer between your Echobox installs. Devices discover each other automatically on the LAN, pair with a PIN (Bluetooth-style prompt), and transfer over an encrypted connection. Transfers are duplicate-aware — tracks you already have are skipped by content hash — and a transfer history with undo keeps everything recoverable.
+
+---
+
 ## Audio Quality Analysis
 
 Echobox decodes and analyzes your entire library to surface mastering quality:
@@ -177,6 +193,7 @@ Echobox uses a modular add-on system — enable only what you need:
 | **Ideas Recorder** | Voice memos and audio recording (feeds room correction measurements) |
 | **Gallery** | Surface image attachments (cover.jpg, folder.jpg, embedded artwork, sidecar images) with role-filter chips, fullscreen viewer, Save-to-Photos, and per-album drill-in |
 | **Lyrics** | Synced lyrics display from embedded tags, sidecar .lrc files, and LRCLib online, plus library-wide bulk scanner and fullscreen karaoke view with word-by-word highlighting |
+| **Files** | Browse non-audio files that live alongside your music (booklets, cue sheets, scans) with combined library scanning and per-item detail pages with Open/Share/Save |
 | **Room Designer** | Predict-based DIY room treatment optimizer with 5-step wizard, 3D viewer, generic absorber/diffuser catalog (vendor-neutral), and min-phase FIR export to the convolution engine |
 | **Smart Playlists** | Rule-based dynamic playlists (22 fields, 11 operators) with M3U/PLS import |
 | **Subsonic** | Browse, stream, and cache music from Subsonic/Navidrome servers |
@@ -246,13 +263,14 @@ Also: [Detailed format support](docs/format-support.md) | [Why Echobox?](docs/wh
 
 ## Platform & Roadmap
 
-**Current status:** public alpha rolling out Android-first. The audio core, DSP chain, and library engine run today on Android, iOS, Windows, macOS, and Linux — sign up at [ombs.io](https://ombs.io) for early access on your platform.
+**Current status:** public alpha rolling out Android-first. Echobox is built cross-platform from a single core — sign up at [ombs.io](https://ombs.io) for early access on your platform.
 
 **Public alpha rollout:**
 
 - Android — currently in public alpha
-- iOS / iPadOS, Windows, macOS, Linux — functional today; joining the public alpha in sequence as desktop and tablet UI polish completes
-- CarPlay — pending Apple approval
+- Windows, Linux — working desktop builds; joining the public alpha as desktop UI polish completes
+- iOS / iPadOS, macOS — in final bring-up
+- CarPlay — planned alongside the iOS release
 
 Echobox is being built by [One Man Band Studios](https://ombs.io).
 
@@ -314,13 +332,13 @@ Echobox is built around a purpose-built, zero-allocation realtime audio engine w
 <details>
 <summary><strong>When will iOS or desktop be available?</strong></summary>
 
-Yes — Echobox runs today on Android, iOS, Windows, macOS, and Linux. The public alpha is rolling out Android-first while desktop and tablet UI polish wraps up; other platforms join the rollout in sequence. Sign up at [ombs.io](https://ombs.io) for early access on your platform. CarPlay support is pending Apple approval. Check the [roadmap](https://ombs.io/roadmap) for live status.
+Echobox is built cross-platform from a single core. The public alpha is rolling out Android-first; Windows and Linux have working desktop builds and join the rollout as desktop UI polish completes, while iOS and macOS are in final bring-up. Sign up at [ombs.io](https://ombs.io) for early access on your platform. CarPlay is planned alongside the iOS release. Check the [roadmap](https://ombs.io/roadmap) for live status.
 </details>
 
 <details>
 <summary><strong>Does Echobox collect any data?</strong></summary>
 
-No in-app analytics and no advertising. Optional opt-in crash reporting via Sentry can be enabled in Settings → Diagnostics — it's off by default and you control whether to turn it on. Your music stays on your device. Network features (SoundTouch, UPnP, Chromecast, internet radio) operate over your local network only.
+No in-app analytics and no advertising. Optional opt-in crash reporting via Sentry can be enabled in Settings → Diagnostics — it's off by default and you control whether to turn it on. Your music stays on your device. Network features (SoundTouch, UPnP, Chromecast, Web Access, Beam, internet radio) operate over your local network only.
 </details>
 
 ---

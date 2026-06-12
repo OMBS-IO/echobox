@@ -4,7 +4,7 @@ How does Echobox compare to Spotify, Apple Music, Qobuz, and TIDAL? This page pr
 
 **A note on categories:** Echobox is a *player*, not a *catalog*. The streaming services compared here provide on-demand access to tens of millions of tracks. Echobox plays your own files (and internet radio, and self-hosted Subsonic/Navidrome servers). The two can — and often should — coexist: Echobox plays the lossless or hi-res FLAC files you purchase from Qobuz, the local rips you make, and the Subsonic stream from your home library; the streaming services give you the catalog for discovery and casual listening.
 
-> **Disclaimer:** This comparison is based on publicly available information as of May 2026. Pricing, tiers, and audio formats change frequently. If you notice an inaccuracy, please [open an issue](https://github.com/OMBS-IO/echobox/issues/new?template=general_feedback.yml) and we'll correct it.
+> **Disclaimer:** This comparison is based on publicly available information as of June 2026. Pricing, tiers, and audio formats change frequently. If you notice an inaccuracy, please [open an issue](https://github.com/OMBS-IO/echobox/issues/new?template=general_feedback.yml) and we'll correct it.
 
 **See also:** [Android Player Comparison](comparison.md) · [Hardware Streamer & Platform Comparison](comparison-hardware.md) · [Media Server App Comparison](comparison-media-server.md)
 
@@ -38,7 +38,7 @@ How does Echobox compare to Spotify, Apple Music, Qobuz, and TIDAL? This page pr
 | **Privacy** | No analytics, no advertising, no account required; opt-in crash reporting off by default | Full account-linked tracking | Apple ecosystem tracking | Standard streaming analytics | Standard streaming analytics |
 | **Scrobbling** | Last.fm + ListenBrainz built-in | Third-party only | No | No | No |
 | **Subsonic / Navidrome** | Yes (with offline cache) | No | No | No | No |
-| **Platforms** | Android, iOS, Windows, macOS, Linux (public alpha rolling out Android-first; CarPlay pending Apple) | iOS / Android / web / desktop / cars / speakers | Apple ecosystem-first; Android + web | iOS / Android / web / desktop | iOS / Android / web / desktop |
+| **Platforms** | Android (public alpha), Windows / Linux (working builds), iOS / macOS (in bring-up); CarPlay planned with iOS | iOS / Android / web / desktop / cars / speakers | Apple ecosystem-first; Android + web | iOS / Android / web / desktop | iOS / Android / web / desktop |
 
 ---
 
@@ -58,6 +58,7 @@ Echobox is a different kind of product, so the comparison is asymmetric — but 
 - **Subsonic / Navidrome support** — Stream your own library from a self-hosted server, with full offline cache.
 - **Karaoke lyrics view + bulk LRCLib scanner** — Fullscreen synced-lyrics view with word-by-word highlighting and dominant-color theming, plus a library-wide LRCLib scanner that writes `.lrc` sidecars next to your audio for portability.
 - **You own your files** — No DRM, no monthly rental, no service shutdown risk, no "this song is no longer available" surprises. Catalog-side gaps are a real ongoing source of streaming-service frustration.
+- **Your library on every device, without a cloud** — Web Access serves your library to any browser on your network (PIN login, trusted HTTPS, upload), and Beam moves music between your own devices over an encrypted LAN connection with duplicate-aware transfer and undo. Streaming services solve multi-device with their cloud; Echobox solves it on your own network.
 - **Privacy** — No in-app analytics, no advertising, no account required for the free tier. Opt-in crash reporting is the only telemetry path and is off by default.
 
 ---
